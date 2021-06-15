@@ -1,0 +1,39 @@
+/* ----------------Header------------- */
+
+@media (max-width:1100px){
+    .header__nav ul li{
+        margin: 0 10px;
+    }
+}
+@media (max-width:970px){
+    .header__desktop{
+        display: none;
+    }
+    .header-mobile{
+        display: grid;
+    }
+}
+@media (max-width:420px){
+    .header-mobile__search img,
+    .header-mobile__logo img,
+    .header-mobile__img img{
+        padding: 20px 10px;
+    }
+
+}
+
+/* ----------------Footer------------- */
+
+@media (max-width: 880px) {
+    .footer-desktop {
+        display: none;
+    }
+    .footer-mobile {
+        display: flex;
+    }
+}
+@media (max-width: 480px) {
+    .footer__wrapper{
+        padding: 30px 9px;
+    }
+}
