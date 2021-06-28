@@ -1,0 +1,599 @@
+.cars-in-stock {
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 20px;
+}
+
+.cars-in-stock-side-bar input[type="number"]::-webkit-outer-spin-button,
+.cars-in-stock-side-bar input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.cars-in-stock-side-bar input[type="number"],
+.cars-in-stock-side-bar input[type="number"]:hover,
+.cars-in-stock-side-bar input[type="number"]:focus {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
+.cars-in-stock-side-bar input:focus {
+  outline: none;
+}
+
+.cars-in-stock-side-bar__container {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.cars-in-stock-side-bar__container label:last-child {
+  margin-right: 0;
+}
+
+.cars-in-stock-side-bar__wrapper {
+  max-width: 330px;
+  width: 100%;
+  background: #dedede;
+  border-radius: 4px;
+  padding: 30px 20px;
+}
+
+.cars-in-stock-side-bar__wrapper ul {
+  margin: 15px 0;
+}
+
+.cars-in-stock-side-bar__wrapper ul li {
+  margin: 10px 0;
+}
+
+.cars-in-stock-side-bar__wrapper label {
+  position: relative;
+}
+
+.cars-in-stock-side-bar__wrapper label::after {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  left: 0;
+  top: 0;
+  background-color: #dedede;
+  border: solid 2px #666666;
+  border-radius: 3px;
+}
+
+.cars-in-stock-side-bar__wrapper label input {
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.cars-in-stock-side-bar__wrapper label input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.cars-in-stock-side-bar__wrapper label span {
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.cars-in-stock-side-bar__wrapper label.active {
+  position: relative;
+}
+
+.cars-in-stock-side-bar__wrapper label.active::after {
+  position: absolute;
+  content: url("/images/pages/filter/check.svg");
+  width: 14px;
+  height: 14px;
+  left: 0px;
+  top: 0px;
+  z-index: 2;
+}
+
+.cars-in-stock-side-bar__wrapper h4 {
+  margin: 30px 0 20px 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.cars-in-stock-side-bar__mobile-filter {
+  display: none;
+}
+
+.cars-in-stock-side-bar__certified-block label span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.cars-in-stock-side-bar__brand-search label, .cars-in-stock-side-bar__model-search label {
+  width: 100%;
+}
+
+.cars-in-stock-side-bar__brand-search label input, .cars-in-stock-side-bar__model-search label input {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #000000;
+}
+
+.cars-in-stock-side-bar__brand-list ul {
+  overflow: hidden;
+  max-height: 110px;
+  transition: 0.3s;
+}
+
+.cars-in-stock-side-bar__show-more-block p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration-line: underline;
+  color: #000000;
+  cursor: pointer;
+}
+
+.cars-in-stock-side-bar__model-list ul {
+  overflow: hidden;
+  max-height: 110px;
+  transition: 0.3s;
+}
+
+.pyramid {
+  margin-left: 20px;
+  width: 9px;
+  height: 2px;
+  background: #666666;
+  position: relative;
+  cursor: pointer;
+}
+
+.pyramid::before {
+  position: absolute;
+  content: '';
+  width: 4px;
+  height: 2px;
+  top: -4px;
+  left: 0;
+  background: #666;
+}
+
+.pyramid::after {
+  position: absolute;
+  content: '';
+  background: #666;
+  width: 13px;
+  height: 2px;
+  top: 4px;
+}
+
+.pyramid.active-asc {
+  margin-left: 20px;
+  width: 9px;
+  height: 2px;
+  background: #ed1c24;
+  position: relative;
+  cursor: pointer;
+}
+
+.pyramid.active-asc::before {
+  position: absolute;
+  content: '';
+  width: 4px;
+  height: 2px;
+  top: -4px;
+  left: 0;
+  background: #ed1c24;
+}
+
+.pyramid.active-asc::after {
+  position: absolute;
+  content: '';
+  background: #ed1c24;
+  width: 13px;
+  height: 2px;
+  top: 4px;
+}
+
+.pyramid.active-desc {
+  margin-left: 20px;
+  width: 9px;
+  height: 2px;
+  background: #ed1c24;
+  position: relative;
+  cursor: pointer;
+}
+
+.pyramid.active-desc::before {
+  position: absolute;
+  content: '';
+  width: 13px;
+  height: 2px;
+  top: -4px;
+  left: 0;
+  background: #ed1c24;
+}
+
+.pyramid.active-desc::after {
+  position: absolute;
+  content: '';
+  background: #ed1c24;
+  width: 4px;
+  height: 2px;
+  top: 4px;
+}
+
+.cars-in-stock-result__top-block {
+  padding: 0 0 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cars-in-stock-result__search-block {
+  flex-basis: 60%;
+}
+
+.cars-in-stock-result__search-block label {
+  position: relative;
+}
+
+.cars-in-stock-result__search-block label::before {
+  position: absolute;
+  content: url("/images/pages/filter/search.png");
+  left: 10px;
+  top: -3px;
+  z-index: 1;
+}
+
+.cars-in-stock-result__search-block label input {
+  position: relative;
+  width: 100%;
+  border-radius: 4px;
+  padding: 10px 15px 10px 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.cars-in-stock-result__search-block label input:focus {
+  outline: none;
+  box-shadow: 0 0 3px #474747;
+}
+
+.cars-in-stock-result__sort-block {
+  display: flex;
+}
+
+.cars-in-stock-result__sort-block p {
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.cars-in-stock-result__sort-block > div {
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.cars-in-stock-result__sort-block > div p {
+  margin: 0 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.cars-in-stock-result__sort-block > div div {
+  width: 9px;
+  height: 2px;
+  background: #666666;
+  position: relative;
+}
+
+.cars-in-stock-result__sort-block > div div::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 2px;
+  background: #666666;
+  top: -4px;
+  left: 0;
+}
+
+.cars-in-stock-result__sort-block > div div::after {
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 2px;
+  background: #666666;
+  top: 4px;
+  left: 0;
+}
+
+.cars-in-stock-result__sort-block > div.active-asc {
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.cars-in-stock-result__sort-block > div.active-asc p {
+  margin: 0 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ed1c24;
+}
+
+.cars-in-stock-result__sort-block > div.active-asc div {
+  width: 9px;
+  height: 2px;
+  background: #ed1c24;
+  position: relative;
+}
+
+.cars-in-stock-result__sort-block > div.active-asc div::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 2px;
+  background: #ed1c24;
+  top: -4px;
+  left: 0;
+}
+
+.cars-in-stock-result__sort-block > div.active-asc div::after {
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 2px;
+  background: #ed1c24;
+  top: 4px;
+  left: 0;
+}
+
+.cars-in-stock-result__sort-block > div.active-desc {
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.cars-in-stock-result__sort-block > div.active-desc p {
+  margin: 0 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ed1c24;
+}
+
+.cars-in-stock-result__sort-block > div.active-desc div {
+  width: 9px;
+  height: 2px;
+  background: #ed1c24;
+  position: relative;
+}
+
+.cars-in-stock-result__sort-block > div.active-desc div::before {
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 2px;
+  background: #ed1c24;
+  top: -4px;
+  left: 0;
+}
+
+.cars-in-stock-result__sort-block > div.active-desc div::after {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 2px;
+  background: #ed1c24;
+  top: 4px;
+  left: 0;
+}
+
+.cars-in-stock-result-car-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.cars-in-stock-result-car-list__item {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 4px;
+}
+
+.cars-in-stock-result-car-list__img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.cars-in-stock-result-car-list__img img {
+  width: 100%;
+}
+
+.cars-in-stock-result-car-list__car-name {
+  padding: 0 15px 5px 15px;
+}
+
+.cars-in-stock-result-car-list__car-name p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #000000;
+  cursor: pointer;
+}
+
+.cars-in-stock-result-car-list__car-name p:hover {
+  text-decoration: underline;
+}
+
+.cars-in-stock-result-car-list__features {
+  padding: 0 15px 20px 15px;
+}
+
+.cars-in-stock-result-car-list__features ul li p {
+  line-height: 20px;
+}
+
+.cars-in-stock-result-car-list__features ul li:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cars-in-stock-result-car-list__features ul li:first-child span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.cars-in-stock-result-car-list__features ul li:first-child div:last-child,
+.cars-in-stock-result-car-list__features ul li:first-child div:last-child span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.cars-in-stock-result-car-list__features ul li:nth-child(2) {
+  margin-top: 25px;
+}
+
+.cars-in-stock-result-car-list__features ul li:nth-child(2) div {
+  margin-bottom: 4px;
+}
+
+.cars-in-stock-result-car-list__features ul li:nth-child(2) div,
+.cars-in-stock-result-car-list__features ul li:nth-child(2) span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.cars-in-stock-result-car-list__features ul li:nth-child(3) {
+  margin-top: 20px;
+}
+
+.cars-in-stock-result-car-list__features ul li:nth-child(3) p {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.cars-in-stock-result-car-list__features ul li:last-child {
+  margin-top: 5px;
+}
+
+.cars-in-stock-result-car-list__features ul li:last-child p {
+  cursor: pointer;
+  padding-left: 20px;
+  position: relative;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-decoration-line: underline;
+  color: #000000;
+}
+
+.cars-in-stock-result-car-list__features ul li:last-child p::before {
+  content: url("/images/pages/certified-autos/certified-special-offer/Vector.svg");
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cars-in-stock-result-car-list__additional-prices-block {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-left: none;
+  border-right: none;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right, #fff, #b6b5b5, #b6b5b5, #fff) 47% 0%;
+  border-image-slice: 1;
+}
+
+.cars-in-stock-result-car-list__location {
+  padding: 0 15px 20px 15px;
+}
+
+.cars-in-stock-result-car-list__location a {
+  position: relative;
+  padding-left: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #4f4f4f;
+}
+
+.cars-in-stock-result-car-list__location a::before {
+  position: absolute;
+  content: url("/images/pages/certified-autos/certified-special-offer/location.svg");
+  top: 0;
+  left: 0;
+}
+
+.inp-no-checked::after, .inp-no-checked::before {
+  display: none;
+}
+
+.inp-no-checked input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.content-flex {
+  display: flex;
+  align-items: center;
+}
+
+.noUi-connect {
+  background: #ed1c24;
+  height: 6px;
+}
+
+.noUi-horizontal {
+  height: 6px;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 24px;
+  height: 24px;
+  top: -10px;
+  background: #ed1c24;
+}
+
+.noUi-handle:after,
+.noUi-handle:before {
+  background: #ed1c24;
+}
+
+.noUi-handle {
+  box-shadow: none;
+}

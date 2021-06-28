@@ -1,0 +1,45 @@
+.certified-autos-nav {
+    background: #000;
+    &__wrapper {
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__title {
+        margin-right: 90px;
+        h3 {
+            min-width: 256px;
+            cursor: pointer;
+            padding: 20px 0;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            color: #ffffff;
+        }
+    }
+    nav {
+        flex-wrap: wrap;
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            li {
+                margin: 10px;
+                a {
+                    padding: 10px;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #ffffff;
+                    img {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

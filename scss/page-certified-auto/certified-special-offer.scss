@@ -1,0 +1,274 @@
+.certified-special-offer {
+    margin: 50px 0;
+    padding: 0 20px;
+    &__title {
+        margin-bottom: 10px;
+        h3 {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+        }
+    }
+}
+.certified-special-offer-list {
+    display: flex;
+
+    &__item {
+        max-width: 340px;
+        width: 100%;
+        background: #ffffff;
+        border-radius: 4px;
+        margin: 10px;
+    }
+
+    &__img {
+        width: 100%;
+        margin-bottom: 10px;
+        img {
+            width: 100%;
+        }
+    }
+
+    &__car-name {
+        padding: 0 15px 5px 15px;
+        p {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            text-transform: uppercase;
+            color: #000000;
+        }
+    }
+
+    &__features {
+        padding: 0 15px 20px 15px;
+        ul {
+            li {
+                p {
+                    line-height: 20px;
+                }
+
+                &:first-child {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    span {
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #000000;
+                    }
+                    div {
+                        &:last-child,
+                        &:last-child span {
+                            font-family: Montserrat;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 17px;
+                            color: #000000;
+                        }
+                    }
+                }
+                &:nth-child(2) {
+                    margin-top: 25px;
+                    div {
+                        margin-bottom: 4px;
+                    }
+                    div,
+                    span {
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #000000;
+                    }
+                }
+                &:nth-child(3) {
+                    margin-top: 20px;
+                    p {
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 24px;
+                        line-height: 29px;
+
+                        color: #000000;
+                    }
+                }
+                &:last-child {
+                    margin-top: 5px;
+                    p {
+                        cursor: pointer;
+                        padding-left: 20px;
+                        position: relative;
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 15px;
+                        text-decoration-line: underline;
+                        color: #000000;
+
+                        &::before {
+                            content: url("/images/pages/certified-autos/certified-special-offer/Vector.svg");
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__additional-prices-block {
+        padding: 15px;
+        margin-bottom: 20px;
+        border-left: none;
+        border-right: none;
+        border-top: 2px solid;
+        border-bottom: 2px solid;
+        border-image: linear-gradient(to right, #fff, #b6b5b5, #b6b5b5, #fff) 47% 0%;
+        border-image-slice: 1;
+    }
+
+    &__location {
+        padding: 0 15px 20px 15px;
+        a {
+            position: relative;
+            padding-left: 20px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+            color: #4f4f4f;
+            &::before {
+                position: absolute;
+                content: url("/images/pages/certified-autos/certified-special-offer/location.svg");
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+}
+
+/* ------------switch input------------- */
+
+.switch-credit,
+.switch-appraise {
+    padding: 10px 0;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+    display: flex;
+    align-items: flex-start;
+    label {
+        cursor: pointer;
+    }
+    label:last-child {
+        margin-left: 15px;
+    }
+}
+
+.switch-appraise {
+    label {
+        div {
+            &:last-child {
+                text-decoration: underline;
+                font-size: 12px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #ed1c24;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #fff;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.switch-appraise,
+.switch-credit {
+    label {
+        div {
+            padding: 2px 0;
+        }
+        div,
+        span {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            color: #000000;
+        }
+    }
+}

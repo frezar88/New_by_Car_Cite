@@ -91,7 +91,7 @@ h6 {
 
 .header__wrapper {
   padding: 0 20px;
-  max-width: 1920px;
+  max-width: 1460px;
   margin: 0 auto;
 }
 
@@ -122,7 +122,6 @@ h6 {
 
 .header__nav ul li a {
   padding: 20px 0;
-  font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -140,7 +139,6 @@ h6 {
   padding: 0 10px 0 40px;
   width: 100%;
   height: 40px;
-  font-family: Montserrat;
   font-size: 16px;
 }
 
@@ -192,16 +190,1687 @@ h6 {
   padding: 20px 40px;
 }
 
-.footer {
+.general-banner__wrapper {
+  position: relative;
+}
+
+.general-banner__img img {
+  width: 100%;
+}
+
+.general-banner__info {
   position: absolute;
+  top: 25%;
+  left: 5%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 44px;
+  color: #ffffff;
+  padding: 0 10px;
+}
+
+.general-banner__title {
+  max-width: 533px;
+  margin-bottom: 16px;
+}
+
+.general-banner__title h1 {
+  font-size: 36px;
+}
+
+.general-banner__sub-title {
+  margin-bottom: 16px;
+}
+
+.general-banner__sub-title h5 {
+  max-width: 533px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.general-banner__btn-link {
+  display: inline-block;
+  background-color: black;
+}
+
+.general-banner__btn-link a {
+  padding: 0px 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.16px;
+  text-transform: uppercase;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #ffffff;
+}
+
+/* ------------- */
+.best-cars {
+  padding: 20px 0;
+  display: flex;
+}
+
+.best-cars-list {
+  overflow: auto;
+}
+
+.best-cars-list__wrapper {
+  display: flex;
+}
+
+.best-cars-list::-webkit-scrollbar {
+  width: 3px;
+  height: 4px;
+}
+
+.best-cars-list::-webkit-scrollbar-track {
+  background-color: #999;
+}
+
+.best-cars-list::-webkit-scrollbar-track-piece {
+  background-color: #f3f3f3;
+}
+
+.best-cars-list::-webkit-scrollbar-thumb {
+  height: 50px;
+  background-color: #666;
+  border-radius: 3px;
+}
+
+.best-cars-list::-webkit-scrollbar-corner {
+  background-color: #999;
+}
+
+.best-cars-list::-webkit-resizer {
+  background-color: #666;
+}
+
+.best-cars-list-item {
+  max-width: 350px;
+  margin: 0 10px 20px 10px;
+  width: 100%;
+}
+
+.best-cars-list-item__img {
+  position: relative;
+  overflow: hidden;
+}
+
+.best-cars-list-item__img::before {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  padding: 10px;
+  content: "ТОП";
+  width: 73.19px;
+  height: 36.77px;
+  left: 702px;
+  top: 751.5px;
+  top: -15px;
+  left: -35px;
+  background-color: #ed1c24;
+  color: #fff;
+  z-index: 1;
+  transform: rotate(-45deg);
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.best-cars-list-item__img img {
+  width: 100%;
+  position: relative;
+}
+
+.best-cars-list-item__car-name p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #000000;
+  padding: 5px 10px;
+}
+
+.best-cars-list-item__all-features {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.best-cars-list-item__engine-features {
+  padding: 0 5px;
+  min-width: 180px;
+  flex-basis: 180px;
+}
+
+.best-cars-list-item__engine-features p {
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.best-cars-list-item__mileage-features p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  min-width: 75px;
+  padding-left: 5px;
+}
+
+.best-cars-list-item__price {
+  padding: 0 10px;
+}
+
+.best-cars-list-item__price p {
+  padding-top: 10px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #5052a2;
+}
+
+.best-cars-callbackform {
+  flex-basis: 30%;
+  background: #dedede;
+  border-radius: 4px;
+  max-width: 370px;
+  width: 100%;
+  max-height: 276px;
+  height: 100%;
+  margin-left: 10px;
+  min-width: 290px;
+}
+
+.best-cars-form {
+  display: grid;
+  padding: 5px 20px 20px 30px;
+}
+
+.best-cars-form h4 {
+  padding: 15px 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.best-cars-form input {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  padding: 15px 10px;
+  margin-bottom: 10px;
+}
+
+.best-cars-form button {
+  background: #000000;
+  border-radius: 2px;
+  padding: 20px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.mobile-title {
+  display: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  padding: 0 0px 10px 10px;
+}
+
+/* ---------------- */
+.popular-models {
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+
+.popular-models__wrapper {
+  padding: 0 20px;
+}
+
+.popular-models__title h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.popular-models__list, .popular-models__list-mobile {
+  flex-basis: 10%;
+  display: flex;
+  justify-items: center;
+  flex-wrap: wrap;
+}
+
+.popular-models__list-mobile {
+  display: none;
+}
+
+.popular-models__item {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.popular-models__item a {
+  text-align: center;
+}
+
+.popular-models__item p {
+  margin-top: 15px;
+  display: inline-block;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.popular-models__item-img {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border: solid 2px #fff;
+  border-radius: 5px;
+}
+
+.popular-models__item-img img {
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+  background: #fff;
+}
+
+.news-block {
+  margin-top: 40px;
+  padding-bottom: 80px;
+}
+
+.news-block__wrapper {
+  padding: 0 20px;
+}
+
+.news-block__title h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.news-block__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+}
+
+.news-block__item {
+  background: #fff;
+}
+
+.news-block__img img {
+  width: 100%;
+}
+
+.news-block__item-title h4 {
+  padding: 10px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.news-block__sub-title p {
+  padding: 0 10px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+
+.news-block__date p {
+  padding: 10px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+
+/* -------page certificate------- */
+.certified-autos-nav {
+  background: #000;
+}
+
+.certified-autos-nav__wrapper {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+.certified-autos-nav__title {
+  margin-right: 90px;
+}
+
+.certified-autos-nav__title h3 {
+  min-width: 256px;
+  cursor: pointer;
+  padding: 20px 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.certified-autos-nav nav {
+  flex-wrap: wrap;
+}
+
+.certified-autos-nav nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.certified-autos-nav nav ul li {
+  margin: 10px;
+}
+
+.certified-autos-nav nav ul li a {
+  padding: 10px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.certified-autos-nav nav ul li a img {
+  display: none;
+}
+
+.general-banner-certified__wrapper {
+  position: relative;
+}
+
+.general-banner-certified__img img {
+  width: 100%;
+}
+
+.general-banner-certified__info {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 44px;
+  color: #ffffff;
+  padding: 0 10px;
+}
+
+.general-banner-certified__title {
+  max-width: 533px;
+  margin-bottom: 16px;
+}
+
+.general-banner-certified__title h1 {
+  font-size: 36px;
+}
+
+.general-banner-certified__sub-title {
+  margin-bottom: 16px;
+}
+
+.general-banner-certified__sub-title h5 {
+  max-width: 533px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.general-banner-certified__btn-link {
+  display: inline-block;
+  background-color: black;
+}
+
+.general-banner-certified__btn-link a {
+  padding: 0px 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.16px;
+  text-transform: uppercase;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #ffffff;
+}
+
+.bonuses-block {
+  position: relative;
+  top: -50px;
+}
+
+.bonuses-block__wrapper {
+  padding: 0 20px;
+}
+
+.bonuses-block__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-evenly;
+}
+
+.bonuses-block__list-item {
+  padding: 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bonuses-block__list-item-wrapper {
+  border: solid 2px #fff;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 320px;
+}
+
+.bonuses-block__list-item-wrapper div {
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 5px;
+  display: grid;
+  grid-template-columns: 85px 1fr;
+  align-content: center;
+  align-items: center;
+}
+
+.bonuses-block__list-item-wrapper img {
+  max-width: 80px;
+  width: 100%;
+}
+
+.bonuses-block__list-item-wrapper span {
+  padding: 0 5px;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.certified-info {
+  background: #f3f3f3;
+  padding: 0 20px;
+}
+
+.certified-info__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.certified-info__item {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+
+.certified-info__item:nth-child(2) .certified-info__text {
+  order: -1;
+}
+
+.certified-info__img {
+  mix-blend-mode: darken;
+  width: 100%;
+}
+
+.certified-info__img img {
+  width: 100%;
+}
+
+.certified-info__text {
+  max-width: 562px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.certified-info__text h5 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  padding-bottom: 8px;
+}
+
+.certified-info__text li,
+.certified-info__text p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.certified-info__text ul li {
+  margin-left: 5px;
+  margin-left: 20px;
+  list-style: outside;
+}
+
+.certified-special-offer {
+  margin: 50px 0;
+  padding: 0 20px;
+}
+
+.certified-special-offer__title {
+  margin-bottom: 10px;
+}
+
+.certified-special-offer__title h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.certified-special-offer-list {
+  display: flex;
+}
+
+.certified-special-offer-list__item {
+  max-width: 340px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 4px;
+  margin: 10px;
+}
+
+.certified-special-offer-list__img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.certified-special-offer-list__img img {
+  width: 100%;
+}
+
+.certified-special-offer-list__car-name {
+  padding: 0 15px 5px 15px;
+}
+
+.certified-special-offer-list__car-name p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.certified-special-offer-list__features {
+  padding: 0 15px 20px 15px;
+}
+
+.certified-special-offer-list__features ul li p {
+  line-height: 20px;
+}
+
+.certified-special-offer-list__features ul li:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.certified-special-offer-list__features ul li:first-child span {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.certified-special-offer-list__features ul li:first-child div:last-child,
+.certified-special-offer-list__features ul li:first-child div:last-child span {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.certified-special-offer-list__features ul li:nth-child(2) {
+  margin-top: 25px;
+}
+
+.certified-special-offer-list__features ul li:nth-child(2) div {
+  margin-bottom: 4px;
+}
+
+.certified-special-offer-list__features ul li:nth-child(2) div,
+.certified-special-offer-list__features ul li:nth-child(2) span {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.certified-special-offer-list__features ul li:nth-child(3) {
+  margin-top: 20px;
+}
+
+.certified-special-offer-list__features ul li:nth-child(3) p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.certified-special-offer-list__features ul li:last-child {
+  margin-top: 5px;
+}
+
+.certified-special-offer-list__features ul li:last-child p {
+  cursor: pointer;
+  padding-left: 20px;
+  position: relative;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-decoration-line: underline;
+  color: #000000;
+}
+
+.certified-special-offer-list__features ul li:last-child p::before {
+  content: url("/images/pages/certified-autos/certified-special-offer/Vector.svg");
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.certified-special-offer-list__additional-prices-block {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-left: none;
+  border-right: none;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right, #fff, #b6b5b5, #b6b5b5, #fff) 47% 0%;
+  border-image-slice: 1;
+}
+
+.certified-special-offer-list__location {
+  padding: 0 15px 20px 15px;
+}
+
+.certified-special-offer-list__location a {
+  position: relative;
+  padding-left: 20px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #4f4f4f;
+}
+
+.certified-special-offer-list__location a::before {
+  position: absolute;
+  content: url("/images/pages/certified-autos/certified-special-offer/location.svg");
+  top: 0;
+  left: 0;
+}
+
+/* ------------switch input------------- */
+.switch-credit,
+.switch-appraise {
+  padding: 10px 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  display: flex;
+  align-items: flex-start;
+}
+
+.switch-credit label,
+.switch-appraise label {
+  cursor: pointer;
+}
+
+.switch-credit label:last-child,
+.switch-appraise label:last-child {
+  margin-left: 15px;
+}
+
+.switch-appraise label div:last-child {
+  text-decoration: underline;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
   bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #ed1c24;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #fff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(16px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.switch-appraise label div,
+.switch-credit label div {
+  padding: 2px 0;
+}
+
+.switch-appraise label div,
+.switch-appraise label span,
+.switch-credit label div,
+.switch-credit label span {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+/* --------page credit------ */
+.credit-content {
+  margin: 40px 0 60px;
+  padding: 0 20px;
+}
+
+.credit-content__title h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.credit-content__title p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.credit-content__icon-car-list {
+  margin-top: 35px;
+}
+
+.credit-content__icon-car-list ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.credit-content__icon-car-list ul li {
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.credit-content__icon-car-list ul li img {
+  max-width: 50px;
+  padding: 12px;
+}
+
+.credit-content__icon-car-list ul li.active {
+  border: solid 2px #ed1c24;
+  position: relative;
+}
+
+.credit-content__icon-car-list ul li.active::before {
+  position: absolute;
+  content: url("/images/pages/credit/check_circle.svg");
+  top: -8px;
+  left: -6px;
+  z-index: 10;
+}
+
+.credit-content__icon-car-list ul li.active img {
+  padding: 10px;
+}
+
+.credit-content-list-of-offers {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.credit-content-list-of-offers-item {
+  margin: 10px;
+  padding: 0 20px 20px 20px;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.credit-content-list-of-offers-item__brand-list ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.credit-content-list-of-offers-item__brand-list ul li {
+  margin: 0px 2px;
+  padding: 10px 5px;
+  background: #000000;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.credit-content-list-of-offers-item__percent-title {
+  margin: 25px 0;
+}
+
+.credit-content-list-of-offers-item__percent-title h5 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.credit-content-list-of-offers-item__list-info {
+  margin-bottom: 20px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right, #fff, #b6b5b5, #b6b5b5, #fff) 47% 0%;
+  border-image-slice: 1;
+}
+
+.credit-content-list-of-offers-item__list-info ul li {
+  margin: 10px 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.credit-content-list-of-offers-item__list-info ul li:last-child {
+  margin-bottom: 20px;
+}
+
+.credit-content-list-of-offers-item__list-info ul li .circle {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.credit-content-list-of-offers-item__date-and-percent ul li {
+  display: flex;
+  justify-content: space-between;
+  max-width: 250px;
+  margin: 10px 0;
+}
+
+.credit-content-list-of-offers-item__date-and-percent ul li div:first-child {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.credit-content-list-of-offers-item__date-and-percent ul li div:last-child {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ed1c24;
+}
+
+.credit-content-list-of-offers-item__block-button {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.credit-content-list-of-offers-item__block-button button {
+  text-transform: uppercase;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+  padding: 5px 15px;
+  width: 100%;
+  max-width: 48%;
+}
+
+.credit-content-list-of-offers-item__block-button button:first-child {
+  background: #000000;
+  border-radius: 2px;
+  color: #fff;
+}
+
+.credit-content-list-of-offers-item__block-button button:last-child {
+  background: #dedede;
+  border-radius: 2px;
+}
+
+/* ----------filter--------- */
+.cars-in-stock {
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 20px;
+}
+
+.cars-in-stock-side-bar input[type="number"]::-webkit-outer-spin-button,
+.cars-in-stock-side-bar input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.cars-in-stock-side-bar input[type="number"],
+.cars-in-stock-side-bar input[type="number"]:hover,
+.cars-in-stock-side-bar input[type="number"]:focus {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
+.cars-in-stock-side-bar input:focus {
+  outline: none;
+}
+
+.cars-in-stock-side-bar__container {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.cars-in-stock-side-bar__container label:last-child {
+  margin-right: 0;
+}
+
+.cars-in-stock-side-bar__wrapper {
+  max-width: 330px;
+  width: 100%;
+  background: #dedede;
+  border-radius: 4px;
+  padding: 30px 20px;
+}
+
+.cars-in-stock-side-bar__wrapper ul {
+  margin: 15px 0;
+}
+
+.cars-in-stock-side-bar__wrapper ul li {
+  margin: 10px 0;
+}
+
+.cars-in-stock-side-bar__wrapper label {
+  position: relative;
+}
+
+.cars-in-stock-side-bar__wrapper label::after {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  left: 0;
+  top: 0;
+  background-color: #dedede;
+  border: solid 2px #666666;
+  border-radius: 3px;
+}
+
+.cars-in-stock-side-bar__wrapper label input {
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.cars-in-stock-side-bar__wrapper label input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.cars-in-stock-side-bar__wrapper label span {
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.cars-in-stock-side-bar__wrapper label.active {
+  position: relative;
+}
+
+.cars-in-stock-side-bar__wrapper label.active::after {
+  position: absolute;
+  content: url("/images/pages/filter/check.svg");
+  width: 14px;
+  height: 14px;
+  left: 0px;
+  top: 0px;
+  z-index: 2;
+}
+
+.cars-in-stock-side-bar__wrapper h4 {
+  margin: 30px 0 20px 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.cars-in-stock-side-bar__mobile-filter {
+  display: none;
+}
+
+.cars-in-stock-side-bar__certified-block label span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.cars-in-stock-side-bar__brand-search label, .cars-in-stock-side-bar__model-search label {
+  width: 100%;
+}
+
+.cars-in-stock-side-bar__brand-search label input, .cars-in-stock-side-bar__model-search label input {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #000000;
+}
+
+.cars-in-stock-side-bar__brand-list ul {
+  overflow: hidden;
+  max-height: 110px;
+  transition: 0.3s;
+}
+
+.cars-in-stock-side-bar__show-more-block p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration-line: underline;
+  color: #000000;
+  cursor: pointer;
+}
+
+.cars-in-stock-side-bar__model-list ul {
+  overflow: hidden;
+  max-height: 110px;
+  transition: 0.3s;
+}
+
+.pyramid {
+  margin-left: 20px;
+  width: 9px;
+  height: 2px;
+  background: #666666;
+  position: relative;
+  cursor: pointer;
+}
+
+.pyramid::before {
+  position: absolute;
+  content: '';
+  width: 4px;
+  height: 2px;
+  top: -4px;
+  left: 0;
+  background: #666;
+}
+
+.pyramid::after {
+  position: absolute;
+  content: '';
+  background: #666;
+  width: 13px;
+  height: 2px;
+  top: 4px;
+}
+
+.pyramid.active-asc {
+  margin-left: 20px;
+  width: 9px;
+  height: 2px;
+  background: #ed1c24;
+  position: relative;
+  cursor: pointer;
+}
+
+.pyramid.active-asc::before {
+  position: absolute;
+  content: '';
+  width: 4px;
+  height: 2px;
+  top: -4px;
+  left: 0;
+  background: #ed1c24;
+}
+
+.pyramid.active-asc::after {
+  position: absolute;
+  content: '';
+  background: #ed1c24;
+  width: 13px;
+  height: 2px;
+  top: 4px;
+}
+
+.pyramid.active-desc {
+  margin-left: 20px;
+  width: 9px;
+  height: 2px;
+  background: #ed1c24;
+  position: relative;
+  cursor: pointer;
+}
+
+.pyramid.active-desc::before {
+  position: absolute;
+  content: '';
+  width: 13px;
+  height: 2px;
+  top: -4px;
+  left: 0;
+  background: #ed1c24;
+}
+
+.pyramid.active-desc::after {
+  position: absolute;
+  content: '';
+  background: #ed1c24;
+  width: 4px;
+  height: 2px;
+  top: 4px;
+}
+
+.cars-in-stock-result__top-block {
+  padding: 0 0 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cars-in-stock-result__search-block {
+  flex-basis: 60%;
+}
+
+.cars-in-stock-result__search-block label {
+  position: relative;
+}
+
+.cars-in-stock-result__search-block label::before {
+  position: absolute;
+  content: url("/images/pages/filter/search.png");
+  left: 10px;
+  top: -3px;
+  z-index: 1;
+}
+
+.cars-in-stock-result__search-block label input {
+  position: relative;
+  width: 100%;
+  border-radius: 4px;
+  padding: 10px 15px 10px 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.cars-in-stock-result__search-block label input:focus {
+  outline: none;
+  box-shadow: 0 0 3px #474747;
+}
+
+.cars-in-stock-result__sort-block {
+  display: flex;
+}
+
+.cars-in-stock-result__sort-block p {
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.cars-in-stock-result__sort-block > div {
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.cars-in-stock-result__sort-block > div p {
+  margin: 0 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.cars-in-stock-result__sort-block > div div {
+  width: 9px;
+  height: 2px;
+  background: #666666;
+  position: relative;
+}
+
+.cars-in-stock-result__sort-block > div div::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 2px;
+  background: #666666;
+  top: -4px;
+  left: 0;
+}
+
+.cars-in-stock-result__sort-block > div div::after {
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 2px;
+  background: #666666;
+  top: 4px;
+  left: 0;
+}
+
+.cars-in-stock-result__sort-block > div.active-asc {
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.cars-in-stock-result__sort-block > div.active-asc p {
+  margin: 0 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ed1c24;
+}
+
+.cars-in-stock-result__sort-block > div.active-asc div {
+  width: 9px;
+  height: 2px;
+  background: #ed1c24;
+  position: relative;
+}
+
+.cars-in-stock-result__sort-block > div.active-asc div::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 2px;
+  background: #ed1c24;
+  top: -4px;
+  left: 0;
+}
+
+.cars-in-stock-result__sort-block > div.active-asc div::after {
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 2px;
+  background: #ed1c24;
+  top: 4px;
+  left: 0;
+}
+
+.cars-in-stock-result__sort-block > div.active-desc {
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.cars-in-stock-result__sort-block > div.active-desc p {
+  margin: 0 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ed1c24;
+}
+
+.cars-in-stock-result__sort-block > div.active-desc div {
+  width: 9px;
+  height: 2px;
+  background: #ed1c24;
+  position: relative;
+}
+
+.cars-in-stock-result__sort-block > div.active-desc div::before {
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 2px;
+  background: #ed1c24;
+  top: -4px;
+  left: 0;
+}
+
+.cars-in-stock-result__sort-block > div.active-desc div::after {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 2px;
+  background: #ed1c24;
+  top: 4px;
+  left: 0;
+}
+
+.cars-in-stock-result-car-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.cars-in-stock-result-car-list__item {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 4px;
+}
+
+.cars-in-stock-result-car-list__img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.cars-in-stock-result-car-list__img img {
+  width: 100%;
+}
+
+.cars-in-stock-result-car-list__car-name {
+  padding: 0 15px 5px 15px;
+}
+
+.cars-in-stock-result-car-list__car-name p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #000000;
+  cursor: pointer;
+}
+
+.cars-in-stock-result-car-list__car-name p:hover {
+  text-decoration: underline;
+}
+
+.cars-in-stock-result-car-list__features {
+  padding: 0 15px 20px 15px;
+}
+
+.cars-in-stock-result-car-list__features ul li p {
+  line-height: 20px;
+}
+
+.cars-in-stock-result-car-list__features ul li:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cars-in-stock-result-car-list__features ul li:first-child span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.cars-in-stock-result-car-list__features ul li:first-child div:last-child,
+.cars-in-stock-result-car-list__features ul li:first-child div:last-child span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.cars-in-stock-result-car-list__features ul li:nth-child(2) {
+  margin-top: 25px;
+}
+
+.cars-in-stock-result-car-list__features ul li:nth-child(2) div {
+  margin-bottom: 4px;
+}
+
+.cars-in-stock-result-car-list__features ul li:nth-child(2) div,
+.cars-in-stock-result-car-list__features ul li:nth-child(2) span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.cars-in-stock-result-car-list__features ul li:nth-child(3) {
+  margin-top: 20px;
+}
+
+.cars-in-stock-result-car-list__features ul li:nth-child(3) p {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.cars-in-stock-result-car-list__features ul li:last-child {
+  margin-top: 5px;
+}
+
+.cars-in-stock-result-car-list__features ul li:last-child p {
+  cursor: pointer;
+  padding-left: 20px;
+  position: relative;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-decoration-line: underline;
+  color: #000000;
+}
+
+.cars-in-stock-result-car-list__features ul li:last-child p::before {
+  content: url("/images/pages/certified-autos/certified-special-offer/Vector.svg");
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cars-in-stock-result-car-list__additional-prices-block {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-left: none;
+  border-right: none;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right, #fff, #b6b5b5, #b6b5b5, #fff) 47% 0%;
+  border-image-slice: 1;
+}
+
+.cars-in-stock-result-car-list__location {
+  padding: 0 15px 20px 15px;
+}
+
+.cars-in-stock-result-car-list__location a {
+  position: relative;
+  padding-left: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #4f4f4f;
+}
+
+.cars-in-stock-result-car-list__location a::before {
+  position: absolute;
+  content: url("/images/pages/certified-autos/certified-special-offer/location.svg");
+  top: 0;
+  left: 0;
+}
+
+.inp-no-checked::after, .inp-no-checked::before {
+  display: none;
+}
+
+.inp-no-checked input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.content-flex {
+  display: flex;
+  align-items: center;
+}
+
+.noUi-connect {
+  background: #ed1c24;
+  height: 6px;
+}
+
+.noUi-horizontal {
+  height: 6px;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 24px;
+  height: 24px;
+  top: -10px;
+  background: #ed1c24;
+}
+
+.noUi-handle:after,
+.noUi-handle:before {
+  background: #ed1c24;
+}
+
+.noUi-handle {
+  box-shadow: none;
+}
+
+.footer {
   width: 100%;
   background: #e5e5e5;
 }
 
 .footer__wrapper {
   padding: 50px;
-  max-width: 1920px;
+  max-width: 1460px;
   margin: 0 auto;
 }
 
@@ -347,6 +2016,121 @@ h6 {
   }
 }
 
+/* -----------generalBanner----------- */
+@media (max-width: 820px) {
+  .general-banner__img {
+    display: none;
+  }
+  .general-banner__wrapper {
+    background-image: url("/images/generalBaner/banner.png");
+    min-height: 360px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .general-banner__info {
+    top: 20%;
+    left: 5%;
+  }
+  .general-banner__title h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #ffffff;
+  }
+  .general-banner__sub-title h5 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+  }
+  .general-banner__btn-link a {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 550px) {
+  .main {
+    padding: 0;
+  }
+  .general-banner__img {
+    display: none;
+  }
+  .general-banner__info {
+    position: absolute;
+  }
+  .general-banner__wrapper {
+    background-image: url("/images/generalBaner/mobileBanner.png");
+    min-height: 360px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .general-banner__info {
+    top: 20%;
+  }
+}
+
+/* ------------best-cars-------------- */
+@media (max-width: 768px) {
+  .mobile-title {
+    display: block;
+  }
+  .best-cars {
+    display: grid;
+  }
+  .best-cars-callbackform {
+    margin-top: 15px;
+    width: 100%;
+    max-width: unset;
+    margin-left: 0;
+  }
+}
+
+/* ------------popular-models--------- */
+@media (max-width: 730px) {
+  .popular-models__list {
+    display: none;
+  }
+  .popular-models__list-mobile {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+  }
+  .popular-models__list-mobile a p {
+    font-size: 16px;
+  }
+}
+
+/* --------------news-block----------- */
+@media (max-width: 768px) {
+  .news-block__list {
+    grid-template-columns: 1fr;
+  }
+  .news-block__list .news-block__item {
+    display: none;
+  }
+  .news-block__list .news-block__item:nth-child(1) {
+    display: block;
+  }
+  .news-block__list .news-block__item:nth-child(2) {
+    display: block;
+  }
+  .news-block__list .news-block__item:nth-child(3) {
+    display: block;
+  }
+}
+
 /* ----------------Footer------------- */
 @media (max-width: 880px) {
   .footer-desktop {
@@ -355,10 +2139,380 @@ h6 {
   .footer-mobile {
     display: flex;
   }
+  .footer-mobile__nav ul li a {
+    padding: 10px;
+  }
 }
 
 @media (max-width: 480px) {
   .footer__wrapper {
     padding: 30px 9px;
   }
+  .footer-mobile__nav ul li a {
+    padding: 10px;
+  }
 }
+
+@media (max-width: 320px) {
+  .footer-mobile__nav ul li a {
+    padding: 10px;
+  }
+}
+
+/* ------------------------------------ */
+/* ----------------pages--------------- */
+/* ---------certified-auto-nav--------- */
+@media (max-width: 850px) {
+  .certified-autos-nav__title {
+    margin-right: 40px;
+  }
+  .certified-autos-nav nav ul li a {
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .certified-autos-nav__title h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+  }
+  .certified-autos-nav__wrapper {
+    display: block;
+  }
+  .certified-autos-nav nav ul {
+    display: block;
+  }
+  .certified-autos-nav nav {
+    flex-wrap: wrap;
+  }
+  .certified-autos-nav nav ul {
+    padding-bottom: 20px;
+  }
+  .certified-autos-nav nav ul li {
+    position: relative;
+  }
+  .certified-autos-nav nav ul li::after {
+    position: absolute;
+    content: url("/images/arrow_right.png");
+    width: 10px;
+    height: 16px;
+    right: 0;
+    top: 30px;
+  }
+  .certified-autos-nav nav ul li a {
+    width: 100%;
+    padding: 20px;
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+  }
+  .certified-autos-nav nav ul li a img {
+    display: block;
+    margin-right: 10px;
+  }
+}
+
+/* ------------certified-autos-generalBanner------------ */
+@media (max-width: 950px) {
+  .general-banner-certified__info {
+    top: 10%;
+  }
+}
+
+@media (max-width: 820px) {
+  .general-banner-certified__img {
+    display: none;
+  }
+  .general-banner-certified__wrapper {
+    background-image: url("/images/pages/certified-autos/general-banner-certified/certified-general-banner.png");
+    min-height: 360px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .general-banner-certified__info {
+    top: 20%;
+    left: 5%;
+  }
+  .general-banner-certified__title h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #ffffff;
+  }
+  .general-banner-certified__sub-title h5 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+  }
+  .general-banner-certified__btn-link a {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 550px) {
+  .main {
+    padding: 0;
+  }
+  .general-banner-certified__img {
+    display: none;
+  }
+  .general-banner-certified__info {
+    position: absolute;
+  }
+  .general-banner-certified__wrapper {
+    background-image: url("/images/pages/certified-autos/general-banner-certified/certified-general-banner.png");
+    min-height: 420px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .general-banner-certified__info {
+    top: 20%;
+  }
+}
+
+@media (max-width: 375px) {
+  .general-banner-certified__info {
+    top: 8%;
+    left: 1%;
+  }
+  .general-banner-certified__title h1 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+/* ----------------bonuses-block------------- */
+@media (max-width: 1060px) {
+  .bonuses-block__list-item-wrapper img {
+    width: 60px;
+  }
+  .bonuses-block__list-item-wrapper span {
+    font-size: 16px;
+  }
+  .bonuses-block {
+    top: -37px;
+  }
+  .bonuses-block__list-item-wrapper div {
+    grid-template-columns: 60px 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .bonuses-block__list {
+    display: block;
+  }
+  .bonuses-block__list-item-wrapper {
+    max-width: unset;
+  }
+  .bonuses-block__list-item {
+    padding: 10px 0;
+  }
+  .bonuses-block__list-item-wrapper img {
+    width: 100%;
+    max-width: unset;
+  }
+  .general-banner-certified__sub-title h5 {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .general-banner-certified__wrapper {
+    min-height: 350px;
+    color: #757474;
+  }
+}
+
+/* -------------certified-info---------------- */
+@media (max-width: 768px) {
+  .certified-info__text h5 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+  }
+  .certified-info__text li,
+  .certified-info__text p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+  }
+}
+
+@media (max-width: 660px) {
+  .certified-info__img img {
+    padding-bottom: 10px;
+  }
+  .certified-info__item {
+    display: block;
+  }
+  .certified-info__item {
+    margin: 20px 0;
+  }
+  .certified-info__text {
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .certified-info__item {
+    margin: 10px 0;
+  }
+}
+
+/* ------------sectified-cpecial-offer------------ */
+@media (max-width: 1250px) {
+  .certified-special-offer-list, .cars-in-stock-result-car-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+  .certified-special-offer-list__item, .cars-in-stock-result-car-list__item {
+    max-width: unset;
+  }
+}
+
+@media (max-width: 920px) {
+  .certified-special-offer-list, .cars-in-stock-result-car-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  .certified-special-offer-list__item, .cars-in-stock-result-car-list__item {
+    max-width: unset;
+  }
+}
+
+@media (max-width: 660px) {
+  .certified-special-offer-list, .cars-in-stock-result-car-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .certified-special-offer__title h3, .cars-in-stock-result-car-list__title h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+  }
+}
+
+@media (max-width: 350px) {
+  .certified-special-offer-list__features ul li:first-child span,
+  .certified-special-offer-list__features ul li:nth-child(2) div,
+  .certified-special-offer-list__features ul li:nth-child(2) span,
+  .cars-in-stock-result-car-list__features ul li:first-child span,
+  .cars-in-stock-result-car-list__features ul li:nth-child(2) div,
+  .cars-in-stock-result-car-list__features ul li:nth-child(2) span {
+    font-size: 12px;
+  }
+}
+
+/* -----------credit-page--------- */
+@media (max-width: 1000px) {
+  .credit-content-list-of-offers {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .credit-content-list-of-offers {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .credit-content-list-of-offers-item__block-button button {
+    font-size: 12px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 425px) {
+  .credit-content-list-of-offers-item__block-button {
+    flex-direction: column;
+  }
+  .credit-content-list-of-offers-item__block-button button {
+    max-width: 100%;
+    font-size: 12px;
+    padding: 5px;
+    margin: 5px 0;
+  }
+  .credit-content-list-of-offers-item__percent-title h5 {
+    font-size: 19px;
+  }
+  .credit-content-list-of-offers-item__list-info ul li {
+    font-size: 14px;
+  }
+  .credit-content-list-of-offers-item__date-and-percent ul li div:first-child {
+    font-size: 16px;
+  }
+  .credit-content-list-of-offers-item__date-and-percent ul li div:last-child {
+    font-size: 16px;
+  }
+  .credit-content-list-of-offers-item__brand-list ul li img {
+    width: 20px;
+  }
+}
+
+/* ------------------------------- */
+body {
+  background: #f3f3f3;
+  font-family: Montserrat;
+}
+
+.main {
+  max-width: 1460px;
+  margin: 0 auto;
+  background: #f3f3f3;
+  min-height: 100vh;
+}
+
+.main-certified {
+  background: #f3f3f3;
+}
+
+.main-filter {
+  padding: 0 20px;
+}
+
+.circle {
+  position: relative;
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #ED1C24;
+  top: -2px;
+  margin: 0 6px;
+}
+
+/* ---------------------------------------- */

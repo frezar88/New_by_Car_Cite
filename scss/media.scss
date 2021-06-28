@@ -1,25 +1,147 @@
 /* ----------------Header------------- */
 
-@media (max-width:1100px){
-    .header__nav ul li{
+@media (max-width: 1100px) {
+    .header__nav ul li {
         margin: 0 10px;
     }
 }
-@media (max-width:970px){
-    .header__desktop{
+@media (max-width: 970px) {
+    .header__desktop {
         display: none;
     }
-    .header-mobile{
+    .header-mobile {
         display: grid;
     }
 }
-@media (max-width:420px){
+@media (max-width: 420px) {
     .header-mobile__search img,
     .header-mobile__logo img,
-    .header-mobile__img img{
+    .header-mobile__img img {
         padding: 20px 10px;
     }
+}
 
+/* -----------generalBanner----------- */
+
+@media (max-width: 820px) {
+    .general-banner__img {
+        display: none;
+    }
+    .general-banner__wrapper {
+        background-image: url("/images/generalBaner/banner.png");
+        min-height: 360px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .general-banner__info {
+        top: 20%;
+        left: 5%;
+    }
+    .general-banner__title h1 {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        color: #ffffff;
+    }
+    .general-banner__sub-title h5 {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #ffffff;
+    }
+    .general-banner__btn-link a {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 550px) {
+    .main {
+        padding: 0;
+    }
+    .general-banner__img {
+        display: none;
+    }
+    .general-banner__info {
+        position: absolute;
+    }
+    .general-banner__wrapper {
+        background-image: url("/images/generalBaner/mobileBanner.png");
+        min-height: 360px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .general-banner__info {
+        top: 20%;
+    }
+}
+
+/* ------------best-cars-------------- */
+
+@media (max-width: 768px) {
+    .mobile-title {
+        display: block;
+    }
+    .best-cars {
+        display: grid;
+    }
+    .best-cars-callbackform {
+        margin-top: 15px;
+        width: 100%;
+        max-width: unset;
+        margin-left: 0;
+    }
+}
+
+/* ------------popular-models--------- */
+
+@media (max-width: 730px) {
+    .popular-models__list {
+        display: none;
+    }
+    .popular-models__list-mobile {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        a {
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+/* --------------news-block----------- */
+
+@media (max-width: 768px) {
+    .news-block__list {
+        grid-template-columns: 1fr;
+    }
+    .news-block__list .news-block__item {
+        display: none;
+        &:nth-child(1) {
+            display: block;
+        }
+        &:nth-child(2) {
+            display: block;
+        }
+        &:nth-child(3) {
+            display: block;
+        }
+    }
 }
 
 /* ----------------Footer------------- */
@@ -31,9 +153,366 @@
     .footer-mobile {
         display: flex;
     }
-}
-@media (max-width: 480px) {
-    .footer__wrapper{
-        padding: 30px 9px;
+    .footer-mobile__nav ul li a {
+        padding: 10px;
     }
 }
+@media (max-width: 480px) {
+    .footer__wrapper {
+        padding: 30px 9px;
+    }
+    .footer-mobile__nav ul li a {
+        padding: 10px;
+    }
+}
+@media (max-width: 320px) {
+    .footer-mobile__nav ul li a {
+        padding: 10px;
+    }
+}
+
+/* ------------------------------------ */
+
+/* ----------------pages--------------- */
+
+/* ---------certified-auto-nav--------- */
+
+@media (max-width: 850px) {
+    .certified-autos-nav__title {
+        margin-right: 40px;
+    }
+    .certified-autos-nav nav ul li a {
+        padding: 20px 10px;
+    }
+}
+@media (max-width: 768px) {
+    .certified-autos-nav__title h3 {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #ffffff;
+    }
+    .certified-autos-nav__wrapper {
+        display: block;
+    }
+    .certified-autos-nav nav ul {
+        display: block;
+    }
+
+    .certified-autos-nav {
+        nav {
+            flex-wrap: wrap;
+            ul {
+                padding-bottom: 20px;
+                li {
+                    position: relative;
+                    &::after {
+                        position: absolute;
+                        content: url("/images/arrow_right.png");
+                        width: 10px;
+                        height: 16px;
+                        right: 0;
+                        top: 30px;
+                    }
+                    a {
+                        width: 100%;
+                        padding: 20px;
+                        font-family: Montserrat;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #ffffff;
+                        display: flex;
+                        align-items: center;
+                        img {
+                            display: block;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ------------certified-autos-generalBanner------------ */
+@media (max-width: 950px) {
+    .general-banner-certified__info {
+        top: 10%;
+    }
+}
+
+@media (max-width: 820px) {
+    .general-banner-certified__img {
+        display: none;
+    }
+    .general-banner-certified__wrapper {
+        background-image: url("/images/pages/certified-autos/general-banner-certified/certified-general-banner.png");
+        min-height: 360px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .general-banner-certified__info {
+        top: 20%;
+        left: 5%;
+    }
+    .general-banner-certified__title h1 {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        color: #ffffff;
+    }
+    .general-banner-certified__sub-title h5 {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #ffffff;
+    }
+    .general-banner-certified__btn-link a {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 550px) {
+    .main {
+        padding: 0;
+    }
+    .general-banner-certified__img {
+        display: none;
+    }
+    .general-banner-certified__info {
+        position: absolute;
+    }
+    .general-banner-certified__wrapper {
+        background-image: url("/images/pages/certified-autos/general-banner-certified/certified-general-banner.png");
+        min-height: 420px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .general-banner-certified__info {
+        top: 20%;
+    }
+}
+
+@media (max-width: 375px) {
+    .general-banner-certified__info {
+        top: 8%;
+        left: 1%;
+    }
+    .general-banner-certified__title h1 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+/* ----------------bonuses-block------------- */
+
+@media (max-width: 1060px) {
+    .bonuses-block__list-item-wrapper img {
+        width: 60px;
+    }
+    .bonuses-block__list-item-wrapper span {
+        font-size: 16px;
+    }
+    .bonuses-block {
+        top: -37px;
+    }
+    .bonuses-block__list-item-wrapper div {
+        grid-template-columns: 60px 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .bonuses-block__list {
+        display: block;
+    }
+    .bonuses-block__list-item-wrapper {
+        max-width: unset;
+    }
+    .bonuses-block__list-item {
+        padding: 10px 0;
+    }
+    .bonuses-block__list-item-wrapper img {
+        width: 100%;
+        max-width: unset;
+    }
+    .general-banner-certified__sub-title h5 {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .general-banner-certified__wrapper{
+        min-height: 350px;
+        color: #757474;
+    }
+    
+}
+
+
+/* -------------certified-info---------------- */
+
+@media (max-width: 768px) {
+    .certified-info__text h5 {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: #000000;
+    }
+    .certified-info__text li,
+    .certified-info__text p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+    }
+}
+
+@media (max-width: 660px) {
+    .certified-info__img img{
+        padding-bottom: 10px;
+    }
+    .certified-info__item {
+        display: block;
+    }
+    .certified-info__item {
+        margin: 20px 0;
+    }
+    .certified-info__text {
+        padding: 0;
+    }
+}
+
+@media(max-width:480px){
+    .certified-info__item{
+        margin: 10px 0;
+    }
+}
+
+
+/* ------------sectified-cpecial-offer------------ */
+
+@media (max-width: 1250px) {
+    .certified-special-offer-list, .cars-in-stock-result-car-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+    .certified-special-offer-list__item, .cars-in-stock-result-car-list__item {
+        max-width: unset;
+    }
+}
+@media (max-width: 920px) {
+    .certified-special-offer-list, .cars-in-stock-result-car-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    .certified-special-offer-list__item, .cars-in-stock-result-car-list__item {
+        max-width: unset;
+    }
+}
+@media (max-width: 660px) {
+    .certified-special-offer-list, .cars-in-stock-result-car-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+}
+@media (max-width: 480px) {
+    .certified-special-offer__title h3, .cars-in-stock-result-car-list__title h3 {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: #000000;
+    }
+}
+@media (max-width: 350px) {
+    .certified-special-offer-list__features ul li:first-child span,
+    .certified-special-offer-list__features ul li:nth-child(2) div,
+    .certified-special-offer-list__features ul li:nth-child(2) span,
+    .cars-in-stock-result-car-list__features ul li:first-child span,
+    .cars-in-stock-result-car-list__features ul li:nth-child(2) div,
+    .cars-in-stock-result-car-list__features ul li:nth-child(2) span,
+
+    {
+        font-size: 12px;
+    }
+}
+
+
+/* -----------credit-page--------- */
+
+@media (max-width:1000px){
+    .credit-content-list-of-offers{
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+@media (max-width:700px){
+    .credit-content-list-of-offers{
+        grid-template-columns: 1fr ;
+    }
+}
+@media (max-width:520px){
+    .credit-content-list-of-offers-item__block-button{
+        button{
+            font-size: 12px;
+            padding:5px;
+        }
+    }
+}
+@media (max-width:425px){
+    .credit-content-list-of-offers-item__block-button{
+        flex-direction: column;
+        button{
+            max-width: 100%;
+            font-size: 12px;
+            padding:5px;
+            margin: 5px 0;
+        }
+    }
+    .credit-content-list-of-offers-item__percent-title h5{
+        font-size: 19px;
+    }
+    .credit-content-list-of-offers-item__list-info ul li{
+        font-size: 14px;
+    }
+    .credit-content-list-of-offers-item__date-and-percent ul li div:first-child{
+        font-size: 16px;
+    }
+    .credit-content-list-of-offers-item__date-and-percent ul li div:last-child{
+        font-size: 16px;
+    }
+    .credit-content-list-of-offers-item__brand-list{
+        ul{
+            li{
+                img{
+                    width: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* ------------------------------- */

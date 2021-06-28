@@ -1,0 +1,185 @@
+.credit-content {
+  margin: 40px 0 60px;
+  padding: 0 20px;
+}
+
+.credit-content__title h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.credit-content__title p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.credit-content__icon-car-list {
+  margin-top: 35px;
+}
+
+.credit-content__icon-car-list ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.credit-content__icon-car-list ul li {
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.credit-content__icon-car-list ul li img {
+  max-width: 50px;
+  padding: 12px;
+}
+
+.credit-content__icon-car-list ul li.active {
+  border: solid 2px #ed1c24;
+  position: relative;
+}
+
+.credit-content__icon-car-list ul li.active::before {
+  position: absolute;
+  content: url("/images/pages/credit/check_circle.svg");
+  top: -8px;
+  left: -6px;
+  z-index: 10;
+}
+
+.credit-content__icon-car-list ul li.active img {
+  padding: 10px;
+}
+
+.credit-content-list-of-offers {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.credit-content-list-of-offers-item {
+  margin: 10px;
+  padding: 0 20px 20px 20px;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.credit-content-list-of-offers-item__brand-list ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.credit-content-list-of-offers-item__brand-list ul li {
+  margin: 0px 2px;
+  padding: 10px 5px;
+  background: #000000;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.credit-content-list-of-offers-item__percent-title {
+  margin: 25px 0;
+}
+
+.credit-content-list-of-offers-item__percent-title h5 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.credit-content-list-of-offers-item__list-info {
+  margin-bottom: 20px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right, #fff, #b6b5b5, #b6b5b5, #fff) 47% 0%;
+  border-image-slice: 1;
+}
+
+.credit-content-list-of-offers-item__list-info ul li {
+  margin: 10px 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.credit-content-list-of-offers-item__list-info ul li:last-child {
+  margin-bottom: 20px;
+}
+
+.credit-content-list-of-offers-item__list-info ul li .circle {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.credit-content-list-of-offers-item__date-and-percent ul li {
+  display: flex;
+  justify-content: space-between;
+  max-width: 250px;
+  margin: 10px 0;
+}
+
+.credit-content-list-of-offers-item__date-and-percent ul li div:first-child {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.credit-content-list-of-offers-item__date-and-percent ul li div:last-child {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ed1c24;
+}
+
+.credit-content-list-of-offers-item__block-button {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.credit-content-list-of-offers-item__block-button button {
+  text-transform: uppercase;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+  padding: 5px 15px;
+  width: 100%;
+  max-width: 48%;
+}
+
+.credit-content-list-of-offers-item__block-button button:first-child {
+  background: #000000;
+  border-radius: 2px;
+  color: #fff;
+}
+
+.credit-content-list-of-offers-item__block-button button:last-child {
+  background: #dedede;
+  border-radius: 2px;
+}

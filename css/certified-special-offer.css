@@ -1,0 +1,276 @@
+.certified-special-offer {
+  margin: 50px 0;
+  padding: 0 20px;
+}
+
+.certified-special-offer__title {
+  margin-bottom: 10px;
+}
+
+.certified-special-offer__title h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.certified-special-offer-list {
+  display: flex;
+}
+
+.certified-special-offer-list__item {
+  max-width: 340px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 4px;
+  margin: 10px;
+}
+
+.certified-special-offer-list__img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.certified-special-offer-list__img img {
+  width: 100%;
+}
+
+.certified-special-offer-list__car-name {
+  padding: 0 15px 5px 15px;
+}
+
+.certified-special-offer-list__car-name p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.certified-special-offer-list__features {
+  padding: 0 15px 20px 15px;
+}
+
+.certified-special-offer-list__features ul li p {
+  line-height: 20px;
+}
+
+.certified-special-offer-list__features ul li:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.certified-special-offer-list__features ul li:first-child span {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.certified-special-offer-list__features ul li:first-child div:last-child,
+.certified-special-offer-list__features ul li:first-child div:last-child span {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.certified-special-offer-list__features ul li:nth-child(2) {
+  margin-top: 25px;
+}
+
+.certified-special-offer-list__features ul li:nth-child(2) div {
+  margin-bottom: 4px;
+}
+
+.certified-special-offer-list__features ul li:nth-child(2) div,
+.certified-special-offer-list__features ul li:nth-child(2) span {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.certified-special-offer-list__features ul li:nth-child(3) {
+  margin-top: 20px;
+}
+
+.certified-special-offer-list__features ul li:nth-child(3) p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.certified-special-offer-list__features ul li:last-child {
+  margin-top: 5px;
+}
+
+.certified-special-offer-list__features ul li:last-child p {
+  cursor: pointer;
+  padding-left: 20px;
+  position: relative;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-decoration-line: underline;
+  color: #000000;
+}
+
+.certified-special-offer-list__features ul li:last-child p::before {
+  content: url("/images/pages/certified-autos/certified-special-offer/Vector.svg");
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.certified-special-offer-list__additional-prices-block {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-left: none;
+  border-right: none;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right, #fff, #b6b5b5, #b6b5b5, #fff) 47% 0%;
+  border-image-slice: 1;
+}
+
+.certified-special-offer-list__location {
+  padding: 0 15px 20px 15px;
+}
+
+.certified-special-offer-list__location a {
+  position: relative;
+  padding-left: 20px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #4f4f4f;
+}
+
+.certified-special-offer-list__location a::before {
+  position: absolute;
+  content: url("/images/pages/certified-autos/certified-special-offer/location.svg");
+  top: 0;
+  left: 0;
+}
+
+/* ------------switch input------------- */
+.switch-credit,
+.switch-appraise {
+  padding: 10px 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  display: flex;
+  align-items: flex-start;
+}
+
+.switch-credit label,
+.switch-appraise label {
+  cursor: pointer;
+}
+
+.switch-credit label:last-child,
+.switch-appraise label:last-child {
+  margin-left: 15px;
+}
+
+.switch-appraise label div:last-child {
+  text-decoration: underline;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #ed1c24;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #fff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(16px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.switch-appraise label div,
+.switch-credit label div {
+  padding: 2px 0;
+}
+
+.switch-appraise label div,
+.switch-appraise label span,
+.switch-credit label div,
+.switch-credit label span {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}

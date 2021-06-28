@@ -1,6 +1,56 @@
 @import "_nullstyle.scss";
+@import "variable.scss";
 @import "header.scss";
+@import "generalBanner.scss";
+@import "best-cars.scss";
+@import "popular-models.scss";
+@import "news-block.scss";
+/* -------page certificate------- */
+@import "page-certified-auto/certified-autos-nav.scss";
+@import "page-certified-auto/cerified-autos-generalBanner.scss";
+@import "page-certified-auto/bonuses-block.scss";
+@import "page-certified-auto/certified-info.scss";
+@import "page-certified-auto/certified-special-offer.scss";
+/* --------page credit------ */
+@import "page-credit/credit-page.scss";
+/* ----------filter--------- */
+@import "filter/filter.scss";
+
 @import "footer.scss";
 @import "media.scss";
+
+body {
+    background: #f3f3f3;
+    font-family: Montserrat;
+}
+
+.main {
+    max-width: 1460px;
+    margin: 0 auto;
+    background: #f3f3f3;
+    min-height: 100vh;
+}
+
+.main-certified {
+    background: #f3f3f3;
+}
+.main-filter {
+    padding: 0 20px;
+}
+.circle {
+    position: relative;
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: $circleGray;
+    top: -2px;
+    margin: 0 6px;
+}
+
+/* ---------------------------------------- */
+
+
+
 
 

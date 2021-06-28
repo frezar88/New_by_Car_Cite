@@ -1,0 +1,55 @@
+.general-banner-certified__wrapper {
+  position: relative;
+}
+
+.general-banner-certified__img img {
+  width: 100%;
+}
+
+.general-banner-certified__info {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 44px;
+  color: #ffffff;
+  padding: 0 10px;
+}
+
+.general-banner-certified__title {
+  max-width: 533px;
+  margin-bottom: 16px;
+}
+
+.general-banner-certified__title h1 {
+  font-size: 36px;
+}
+
+.general-banner-certified__sub-title {
+  margin-bottom: 16px;
+}
+
+.general-banner-certified__sub-title h5 {
+  max-width: 533px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.general-banner-certified__btn-link {
+  display: inline-block;
+  background-color: black;
+}
+
+.general-banner-certified__btn-link a {
+  padding: 0px 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.16px;
+  text-transform: uppercase;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #ffffff;
+}
