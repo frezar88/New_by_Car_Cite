@@ -9,9 +9,9 @@ export class CreateResultCarItems {
         this.carItem.append(this.createFeaturesForCarItem())
         this.carItem.append(this.createAdditionalPricesBlockForCarItem())
         this.carItem.append(this.createLocationBlockForCarItem())
-      /*   this.carItem.addEventListener('click',(e)=>{
+        this.carItem.addEventListener('click',(e)=>{
             console.log(e.currentTarget)
-        }) */
+        })
         this.parentBlock.append(this.carItem)
     }
 
@@ -139,8 +139,8 @@ export class CreateResultCarItems {
     }
 }
 
+
 for (let index = 0; index < 5; index++) {
 
     new CreateResultCarItems()
 }
-
