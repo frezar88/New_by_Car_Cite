@@ -193,7 +193,10 @@
     display: block;
   }
   .certified-autos-nav nav {
+    max-height: 0;
+    overflow: hidden;
     flex-wrap: wrap;
+    transition: .3s;
   }
   .certified-autos-nav nav ul {
     padding-bottom: 20px;
@@ -490,3 +493,228 @@
 }
 
 /* ------------------------------- */
+/* --------------call-back------------- */
+@media (max-width: 956px) {
+  .callback-form__wrapper {
+    grid-gap: 20px;
+    justify-content: space-between;
+  }
+  .callback-form {
+    left: unset;
+  }
+  .callback-form-form {
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 730px) {
+  .callback-form__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .callback-form-car-info__wrapper {
+    max-width: unset;
+  }
+  .callback-form-car-info__location {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .callback-form__wrapper {
+    padding: 20px 10px;
+  }
+  .callback-form-car-info-price-info {
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .callback-form__wrapper .circle {
+    margin: 0 1px;
+  }
+  .callback-form-car-info__features p {
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 340px) {
+  .callback-form__wrapper .circle {
+    margin: 0 1px;
+  }
+  .callback-form-car-info-price-info__benefits-for-month p:first-child,
+  .callback-form-car-info-price-info__benefits-for-trade-in p:first-child {
+    font-size: 12px;
+  }
+  .callback-form-car-info-price-info__benefits-for-month p:last-child,
+  .callback-form-car-info-price-info__benefits-for-trade-in p:last-child {
+    font-size: 13px;
+  }
+}
+
+/* ---------car-full-information--------- */
+@media (max-width: 1316px) {
+  .cars-in-stock-result-car-list__additional-prices-block .switch-credit label:last-child {
+    display: block;
+  }
+  .cars-in-stock-result-car-list__additional-prices-block .switch-credit label div:last-child {
+    margin: 0;
+  }
+  .cars-in-stock-result-car-list__additional-prices-block .switch-credit label div:last-child span {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .car-full-information-image-block {
+    width: 65%;
+  }
+  .car-full-information-form {
+    margin-left: 10px;
+  }
+  .cars-in-stock-result-car-list__location {
+    padding-bottom: 20px;
+  }
+  .cars-in-stock-result-car-list__item {
+    height: unset;
+  }
+}
+
+@media (max-width: 1000px) {
+  .car-full-information-image-block {
+    width: 65%;
+  }
+  .car-full-information-form {
+    margin-left: 10px;
+  }
+  .cars-in-stock-result-car-list__location {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 950px) {
+  .car-full-information-image-block-image-car-features.mobile {
+    padding: 30px 0;
+    display: flex;
+  }
+  .car-full-information__image-and-form {
+    display: unset;
+  }
+  .car-full-information-image-block {
+    width: 100%;
+  }
+  .car-full-information-image-block-header {
+    display: none;
+  }
+  .car-full-information-image-block-image-car-features {
+    display: none;
+  }
+  .car-full-information-form {
+    margin: 0;
+  }
+  .car-full-information-form {
+    min-width: unset;
+  }
+}
+
+@media (max-width: 500px) {
+  .car-full-information-image-block-image-car-features__item img {
+    max-width: 45px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    padding: 0;
+  }
+  .swiper-button-next::after, .swiper-button-next::before,
+  .swiper-button-prev::after,
+  .swiper-button-prev::before {
+    font-size: 12px;
+  }
+  .swiper-pagination .swiper-pagination-bullet {
+    border-radius: 0;
+    background: #dedede;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    padding: 0px;
+    opacity: 1;
+  }
+  .swiper-pagination .swiper-pagination-bullet-active {
+    background: #ed1c24;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+  }
+}
+
+@media (max-width: 400px) {
+  .car-full-information-image-block-image-car-features__item p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 880px) {
+  .similar-cars {
+    padding: 0 10px;
+  }
+  .main-car-full-information {
+    padding: 20px 0;
+  }
+  .features-cars-block-content {
+    background: #f3f3f3;
+  }
+  .features-cars-block__list {
+    display: none;
+  }
+  .features-cars-block-content__accord {
+    display: block;
+  }
+  .features-cars-block-content__key-options,
+  .features-cars-block-content__fully-equipped,
+  .features-cars-block-content__features,
+  .features-cars-block-content__service-history,
+  .features-cars-block-content__certificate-of-inspection {
+    overflow: hidden;
+    padding: 0;
+    display: block;
+    padding: 0 20px;
+    transition: max-height 0.4s;
+  }
+  .features-cars-block-content__accord {
+    background: #fff;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    position: relative;
+    padding: 20px 0 20px 20px;
+  }
+  .features-cars-block-content__accord::after {
+    position: absolute;
+    content: url("/images/accord-arrow.svg");
+    right: 20px;
+    top: calc(50% - 9px);
+    transform: rotate(180deg);
+    transition: 0.3s;
+  }
+  .features-cars-block-content__accord.active {
+    position: relative;
+  }
+  .features-cars-block-content__accord.active::after {
+    position: absolute;
+    content: url("/images/accord-arrow.svg");
+    right: 20px;
+    top: calc(50% - 9px);
+    transition: 0.3s;
+    transform: rotate(0deg);
+  }
+  .features-cars-block-content__item {
+    box-sizing: border-box;
+    margin: 20px 0;
+  }
+  .features-cars-block-content__item ul {
+    max-height: 0;
+    background: #fff;
+  }
+}

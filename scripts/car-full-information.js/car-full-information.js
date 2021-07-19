@@ -2,8 +2,13 @@ class CarFullInformation {
     featuresCarsBlockContent = document.querySelector('.features-cars-block-content')
     featuresCarsBlockList = document.querySelector('.features-cars-block__list')
     allUlInFeaturesCarsBlockContent = document.querySelectorAll('.features-cars-block-content__item ul')
+    btnReserve = document.querySelector('.btn-reserve');
+    shadowBlock = document.querySelector('.shadow-block');
+    callbackForm = document.querySelector('.callback-form');
+
     constructor() {
         this.UiCarFullInformation()
+        this.callBackFormEvents()
 
     }
 
@@ -12,6 +17,11 @@ class CarFullInformation {
         this.accordAction()
         this.selectFeaturesCarsBlockList()
         this.followForSizeWindow()
+    }
+
+    callBackFormEvents() {
+        this.showCallBackForm()
+        this.closeCallBackForm()
     }
 
     swiperSlider() {
@@ -83,7 +93,7 @@ class CarFullInformation {
 
     followForSizeWindow(){
         window.addEventListener("resize", ()=>{
-            if (document.documentElement.clientWidth <= 880){
+            if (document.documentElement.clientWidth <= 879){
                 this.allUlInFeaturesCarsBlockContent.forEach(el=>{
                     el.style.display = 'block'
                 })
@@ -94,11 +104,25 @@ class CarFullInformation {
                 let activeFeaturesCarsBlockListItem = document.querySelector('.features-cars-block__list ul li.active')
                 let dataValue = activeFeaturesCarsBlockListItem.attributes['data-name'].value
                 if (activeFeaturesCarsBlockListItem){
-                    document.querySelector(`.features-cars-block-content 
-                    .features-cars-block-content__item ul[data-name="${dataValue}"]`).style.display = 'block'
+                    document.querySelector(`.features-cars-block-content .features-cars-block-content__item ul[data-name="${dataValue}"]`).style.display = 'block'
                 }
 
             }
+        })
+    }
+
+    
+
+    showCallBackForm() {
+        this.btnReserve.addEventListener('click', () => {
+            this.shadowBlock.style.display = 'block'
+            this.callbackForm.style.display = 'block'
+        })
+    }
+    closeCallBackForm() {
+        this.shadowBlock.addEventListener('click', () => {
+            this.shadowBlock.style.display = 'none'
+            this.callbackForm.style.display = 'none'
         })
     }
 }

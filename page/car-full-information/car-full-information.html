@@ -18,343 +18,727 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__wrapper">
-            <div class="header__desktop">
-                <div class="header__logo">
-                    <a href="/index.html">
-                        <img src="/images/header/logo.png" alt="logo">
-                    </a>
-                </div>
-                <div class="header__nav">
-                    <nav>
-                        <ul>
-                            <li><a href="/page/filter/filter.html">Авто в наличии</a></li>
-                            <li><a href="/page/Certified-autos/certified.html">Сертифицированные авто</a></li>
-                            <li><a href="/page/Credit/credit.html">Кредитование</a></li>
-                            <li><a href="#">Дилеры</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="header__search">
-                    <label>
-                        <input type="search">
-                        <img src="/images/header/search.png" alt="#">
-                    </label>
-
-                </div>
-            </div>
-            <div class="header-mobile">
-                <div class="header-mobile__img">
-                    <img src="/images/header/mobile/burger.png" alt="#">
-                </div>
-                <div class="header-mobile__logo">
-                    <img src="/images/header/mobile/logo.png" alt="#">
-                </div>
-                <div class="header-mobile__search">
-                    <img src="/images/header/mobile/search.png" alt="#">
-                </div>
-            </div>
-        </div>
-    </header>
-    <main class="main main-car-full-information">
-        <div class="car-full-information">
-            <div class="car-full-information__wrapper">
-                <div class="car-full-information__btn-back-to-search">
-                    <p>Вернуться к поиску</p>
-                </div>
-                <div class="car-full-information__image-and-form">
-                    <div class="car-full-information-image-block">
-                        <div class="car-full-information-image-block-header">
-                            <div class="car-full-information-image-block-header__item active">
-                                <img src="/images/pages/car-full-information/header/01.svg" alt="#">
-                                <p>Все фото (14)</p>
-                            </div>
-                            <div class="car-full-information-image-block-header__item">
-                                <img src="/images/pages/car-full-information/header/02.svg" alt="#">
-                                <p>Интерьер(4)</p>
-                            </div>
-                            <div class="car-full-information-image-block-header__item">
-                                <img src="/images/pages/car-full-information/header/03.svg" alt="#">
-                                <p>Экстерьер(10)</p>
-                            </div>
-
+    <div class="car-full-information">
+        <div class="shadow-block"></div>
+        <div class="callback-form">
+            <div class="callback-form__wrapper">
+                <div class="callback-form-car-info">
+                    <div class="callback-form-car-info__wrapper">
+                        <div class="callback-form-car-info__car-name">
+                            <h3>Renault Clio</h3>
                         </div>
-                        <div class="car-full-information-image-block-slider">
-                            <div class="swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img src="/images/pages/car-full-information/slider/Rectangle 20.png" alt="">
+                        <div class="callback-form-car-info__car-first-price">
+                            <p><span>8 000 </span> BYN</p>
+                        </div>
+                        <div class="callback-form-car-info__features">
+                            <p>
+                                <span class="generation">4-е поколение</span>
+                                <span class="circle"></span>
+                                <span class="year">2018</span>
+                                <span class="car-body">хэтчбек</span>
+                                <span class="circle"></span>
+                                <span class="car-drive">4WD</span>
+                                <span class="circle"></span>
+                                <span class="number-of-seats">5 мест</span>
+                            </p>
+                            <p class="margint">
+                                <span class="engine-value margint">1,6 турбо</span>
+                                <span class="engine-power">150 л.с</span>
+                                <span class="circle"></span>
+                                <span class="transmission">автомат</span>
+                            </p>
+                                
+                            
+                        </div>
+                        <div class="cars-in-stock-result-car-list__location callback-form-car-info__location">
+                            <p><a href="#">Минск, ул. Каменногорская</a></p>
+                        </div>
+                        <div class="callback-form-car-info-price-info">
+                            <div class="callback-form-car-info-price-info__car-price">
+                                <div>
+                                    <p>Изначальная цена<br> автомобиля</p>
+                                    <p><span>118 000</span> BYN </p>
+                                </div>
+                                <p>Renault Clio</p>   
+                            </div>
+                            <div class="callback-form-car-info-price-info__you-car-price">
+                                <div>
+                                    <p>Цена вашего<br> автомобиля</p>
+                                    <p><span>90 000</span> BYN </p>
+                                </div>
+                                <p>Renault Arkana</p>
+                            </div>
+                            <div class="callback-form-car-info-price-info__benefits">
+                                <h4>Выгоды</h4>
+                                <div class="callback-form-car-info-price-info__benefits-for-month">
+                                    <p>Выгода в феврале</p>
+                                    <p><span>- 2 000 </span> BYN</p>
+
+                                </div>
+                                <div class="callback-form-car-info-price-info__benefits-for-trade-in">
+                                    <p>Выгода по trade-in</p>
+                                    <p><span>- 20 000 BYN </span> BYN</p>
+                                </div>
+                            
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="callback-form-form">
+                    <div class="callback-form-form__wrapper">
+                        <h3>Зарезервировать</h3>
+                        <form >
+                            <p>Как к вам обращаться</p>
+                            <label ><input name="name" type="text"></label>
+
+                            <p>Телефон<span class="stars">*</span></p>
+                            <label ><input required name="phone" type="tel"></label>
+
+                            <p>E-mail<span class="stars">*</span></p>
+                            <label ><input required name="email" type="email"></label>
+
+                            <p>Когда вас ждать?<span class="stars">*</span></p>
+                            <label ><input required name="date" type="date"></label>
+
+                            <p>Комментарий</p>
+                            <textarea name="comment" ></textarea>
+                            <br>
+                            <button type="submit">отправить</button>
+
+                        </form>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+
+        <header class="header">
+            <div class="header__wrapper">
+                <div class="header__desktop">
+                    <div class="header__logo">
+                        <a href="/index.html">
+                            <img src="/images/header/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="header__nav">
+                        <nav>
+                            <ul>
+                                <li><a href="/page/filter/filter.html">Авто в наличии</a></li>
+                                <li><a href="/page/Certified-autos/certified.html">Сертифицированные авто</a></li>
+                                <li><a href="/page/Credit/credit.html">Кредитование</a></li>
+                                <li><a href="#">Дилеры</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__search">
+                        <label>
+                            <input type="search">
+                            <img src="/images/header/search.png" alt="#">
+                        </label>
+        
+                    </div>
+                </div>
+                <div class="header-mobile">
+                    <div class="header-mobile__img">
+                        <img src="/images/header/mobile/burger.png" alt="#">
+                    </div>
+                    <div class="header-mobile__logo">
+                        <img src="/images/header/mobile/logo.png" alt="#">
+                    </div>
+                    <div class="header-mobile__search">
+                        <img src="/images/header/mobile/search.png" alt="#">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main main-car-full-information">
+            <div class="car-full-information">
+                <div class="car-full-information__wrapper">
+                    <div class="car-full-information__btn-back-to-search">
+                        <p>Вернуться к поиску</p>
+                    </div>
+                    <div class="car-full-information__image-and-form">
+                        <div class="car-full-information-image-block">
+                            <div class="car-full-information-image-block-header">
+                                <div class="car-full-information-image-block-header__item active">
+                                    <img src="/images/pages/car-full-information/header/01.svg" alt="#">
+                                    <p>Все фото (14)</p>
+                                </div>
+                                <div class="car-full-information-image-block-header__item">
+                                    <img src="/images/pages/car-full-information/header/02.svg" alt="#">
+                                    <p>Интерьер(4)</p>
+                                </div>
+                                <div class="car-full-information-image-block-header__item">
+                                    <img src="/images/pages/car-full-information/header/03.svg" alt="#">
+                                    <p>Экстерьер(10)</p>
+                                </div>
+        
+                            </div>
+                            <div class="car-full-information-image-block-slider">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="/images/pages/car-full-information/slider/Rectangle 20.png" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="/images/pages/car-full-information/slider/Rectangle 20.png" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="/images/pages/car-full-information/slider/Rectangle 20.png" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="/images/pages/car-full-information/slider/Rectangle 20.png" alt="">
+                                        </div>
                                     </div>
-                                    <div class="swiper-slide">
-                                        <img src="/images/pages/car-full-information/slider/Rectangle 20.png" alt="">
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+        
+                            </div>
+                            <div class="car-full-information-image-block-image-car-features">
+                                <div class="car-full-information-image-block-image-car-features__item">
+                                    <img src="/images/pages/car-full-information/features__item/01.svg" alt="#">
+                                    <p>Хэтчбек</p>
+                                </div>
+                                <div class="car-full-information-image-block-image-car-features__item">
+                                    <img src="/images/pages/car-full-information/features__item/02.svg" alt="#">
+                                    <p>4WD</p>
+                                </div>
+                                <div class="car-full-information-image-block-image-car-features__item">
+                                    <img src="/images/pages/car-full-information/features__item/03.svg" alt="#">
+                                    <p>5 мест</p>
+                                </div>
+                                <div class="car-full-information-image-block-image-car-features__item">
+                                    <img src="/images/pages/car-full-information/features__item/04.svg" alt="#">
+                                    <p>Бензин</p>
+                                </div>
+                                <div class="car-full-information-image-block-image-car-features__item">
+                                    <img src="/images/pages/car-full-information/features__item/05.svg" alt="#">
+                                    <p>Гарантия</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-full-information-form">
+                            <div class="cars-in-stock-result-car-list__item">
+        
+                                <div class="cars-in-stock-result-car-list__car-name">
+                                    <p>Renault Clio</p>
+                                </div>
+                                <div class="cars-in-stock-result-car-list__features">
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <p>
+                                                    <span class="generation">4-е поколение</span>
+                                                    <span class="circle"></span>
+                                                    <span class="year">2018</span><br>
+                                                    <span class="car-body">хэтчбек</span>
+                                                    <span class="circle"></span>
+                                                    <span class="car-drive">4WD</span>
+                                                    <span class="circle"></span>
+                                                    <span class="number-of-seats">5 мест</span>
+                                                </p>
+                                            </div>
+                                            <div><span class="mileage">32 500 </span>км</div>
+                                        </li>
+                                        <li>
+                                            <div class="engine-value">1,6 турбо</div>
+                                            <span class="engine-power">150 л.с</span>
+                                            <span class="circle"></span>
+                                            <span class="transmission">автомат</span>
+                                        </li>
+                                        <li>
+                                            <p><span class="price-car">28 000</span> BYN</p>
+                                        </li>
+                                        <li class="about-price">
+                                            <p>Подробнее о цене</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="cars-in-stock-result-car-list__additional-prices-block">
+                                    <div class="switch-credit">
+                                        <label class="switch">
+                                            <input id="credit1" type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <label for="credit1">
+                                            <div>Цена в кредит</div>
+                                            <div><span>31 501</span>BYN/мес</div>
+                                        </label>
                                     </div>
-                                    <div class="swiper-slide">
-                                        <img src="/images/pages/car-full-information/slider/Rectangle 20.png" alt="">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="/images/pages/car-full-information/slider/Rectangle 20.png" alt="">
+                                    <div class="switch-appraise">
+                                        <label class="switch">
+                                            <input id="appraise1" type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <label for="appraise1">
+                                            <div>Цена с учётом Trade-in</div>
+                                            <div>Оцените свой автомобиль</div>
+                                        </label>
                                     </div>
                                 </div>
-                                <div class="swiper-button-prev"></div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-pagination"></div>
-                            </div>
-
-                        </div>
-                        <div class="car-full-information-image-block-image-car-features">
-                            <div class="car-full-information-image-block-image-car-features__item">
-                                <img src="/images/pages/car-full-information/features__item/01.svg" alt="#">
-                                <p>Хэтчбек</p>
-                            </div>
-                            <div class="car-full-information-image-block-image-car-features__item">
-                                <img src="/images/pages/car-full-information/features__item/02.svg" alt="#">
-                                <p>4WD</p>
-                            </div>
-                            <div class="car-full-information-image-block-image-car-features__item">
-                                <img src="/images/pages/car-full-information/features__item/03.svg" alt="#">
-                                <p>5 мест</p>
-                            </div>
-                            <div class="car-full-information-image-block-image-car-features__item">
-                                <img src="/images/pages/car-full-information/features__item/04.svg" alt="#">
-                                <p>Бензин</p>
-                            </div>
-                            <div class="car-full-information-image-block-image-car-features__item">
-                                <img src="/images/pages/car-full-information/features__item/05.svg" alt="#">
-                                <p>Гарантия</p>
+                                <div class="switch-appraise__btn-reserve">
+                                    <button class="btn-reserve">ЗАБРОНИРОВАТЬ</button>
+                                </div>
+        
+                                <div class="cars-in-stock-result-car-list__location">
+                                    <p><a href="#">Минск, ул. Каменногорская</a></p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="car-full-information-form">
-                        <div class="cars-in-stock-result-car-list__item">
-
-                            <div class="cars-in-stock-result-car-list__car-name">
-                                <p>Renault Clio</p>
-                            </div>
-                            <div class="cars-in-stock-result-car-list__features">
+                    <div class="car-full-information-image-block-image-car-features mobile">
+                        <div class="car-full-information-image-block-image-car-features__item">
+                            <img src="/images/pages/car-full-information/features__item/01.svg" alt="#">
+                            <p>Хэтчбек</p>
+                        </div>
+                        <div class="car-full-information-image-block-image-car-features__item">
+                            <img src="/images/pages/car-full-information/features__item/02.svg" alt="#">
+                            <p>4WD</p>
+                        </div>
+                        <div class="car-full-information-image-block-image-car-features__item">
+                            <img src="/images/pages/car-full-information/features__item/03.svg" alt="#">
+                            <p>5 мест</p>
+                        </div>
+                        <div class="car-full-information-image-block-image-car-features__item">
+                            <img src="/images/pages/car-full-information/features__item/04.svg" alt="#">
+                            <p>Бензин</p>
+                        </div>
+                        <div class="car-full-information-image-block-image-car-features__item">
+                            <img src="/images/pages/car-full-information/features__item/05.svg" alt="#">
+                            <p>Гарантия</p>
+                        </div>
+                    </div>
+                    <div class="features-cars-block">
+                        <div class="features-cars-block__wrapper">
+                            <div class="features-cars-block__list">
                                 <ul>
-                                    <li>
-                                        <div>
-                                            <p>
-                                                <span class="generation">4-е поколение</span>
-                                                <span class="circle"></span>
-                                                <span class="year">2018</span><br>
-                                                <span class="car-body">хэтчбек</span>
-                                                <span class="circle"></span>
-                                                <span class="car-drive">4WD</span>
-                                                <span class="circle"></span>
-                                                <span class="number-of-seats">5 мест</span>
-                                            </p>
-                                        </div>
-                                        <div><span class="mileage">32 500 </span>км</div>
-                                    </li>
-                                    <li>
-                                        <div class="engine-value">1,6 турбо</div>
-                                        <span class="engine-power">150 л.с</span>
-                                        <span class="circle"></span>
-                                        <span class="transmission">автомат</span>
-                                    </li>
-                                    <li>
-                                        <p><span class="price-car">28 000</span> BYN</p>
-                                    </li>
-                                    <li class="about-price">
-                                        <p>Подробнее о цене</p>
-                                    </li>
+                                    <li data-name="key-options" class="active">Ключевые опции</li>
+                                    <li data-name="fully-equipped">Полная комплектация</li>
+                                    <li data-name="features">Характеристики</li>
+                                    <li data-name="service-history">Исторя обслуживания</li>
+                                    <li data-name="certificate-of-inspection">Сертификат осмотра</li>
                                 </ul>
                             </div>
-                            <div class="cars-in-stock-result-car-list__additional-prices-block">
-                                <div class="switch-credit">
-                                    <label class="switch">
-                                        <input id="credit1" type="checkbox">
-                                        <span class="slider round"></span>
-                                    </label>
-                                    <label for="credit1">
-                                        <div>Цена в кредит</div>
-                                        <div><span>31 501</span>BYN/мес</div>
-                                    </label>
+                            <div class="features-cars-block-content">
+                                <div class="features-cars-block-content__item">
+                                    <div class="features-cars-block-content__accord">
+                                        Ключевые опции
+                                    </div>
+                                    <ul data-name="key-options" class="features-cars-block-content__key-options">
+                                        <li>Опция 1</li>
+                                        <li>Опция 2</li>
+                                        <li>Опция 3</li>
+                                        <li>Опция 4</li>
+                                        <li>Опция 5</li>
+                                        <li>Опция 6</li>
+                                    </ul>
                                 </div>
-                                <div class="switch-appraise">
-                                    <label class="switch">
-                                        <input id="appraise1" type="checkbox">
-                                        <span class="slider round"></span>
-                                    </label>
-                                    <label for="appraise1">
-                                        <div>Цена с учётом Trade-in</div>
-                                        <div>Оцените свой автомобиль</div>
-                                    </label>
+                                <div class="features-cars-block-content__item">
+                                    <div class="features-cars-block-content__accord">
+                                        Полная комплектация
+                                    </div>
+                                    <ul data-name="fully-equipped" class="features-cars-block-content__fully-equipped">
+                                        <li>Опция 2</li>
+                                        <li>Опция 2</li>
+                                        <li>Опция 3</li>
+                                        <li>Опция 4</li>
+                                        <li>Опция 5</li>
+                                        <li>Опция 6</li>
+                                    </ul>
                                 </div>
+                                <div class="features-cars-block-content__item">
+                                    <div class="features-cars-block-content__accord">
+                                        Характеристики
+                                    </div>
+                                    <ul data-name="features" class="features-cars-block-content__features">
+                                        <li>Опция 3</li>
+                                        <li>Опция 2</li>
+                                        <li>Опция 3</li>
+                                        <li>Опция 4</li>
+                                        <li>Опция 5</li>
+                                        <li>Опция 6</li>
+                                    </ul>
+                                </div>
+                                <div class="features-cars-block-content__item">
+                                    <div class="features-cars-block-content__accord">
+                                        Исторя обслуживания
+                                    </div>
+                                    <ul data-name="service-history" class="features-cars-block-content__service-history">
+                                        <li>Опция 4</li>
+                                        <li>Опция 2</li>
+                                        <li>Опция 3</li>
+                                        <li>Опция 4</li>
+                                        <li>Опция 5</li>
+                                        <li>Опция 6</li>
+                                    </ul>
+                                </div>
+                                <div class="features-cars-block-content__item">
+                                    <div class="features-cars-block-content__accord">
+                                        Сертификат осмотра
+                                    </div>
+                                    <ul data-name="certificate-of-inspection"
+                                        class="features-cars-block-content__certificate-of-inspection">
+                                        <li>Опция 5</li>
+                                        <li>Опция 2</li>
+                                        <li>Опция 3</li>
+                                        <li>Опция 4</li>
+                                        <li>Опция 5</li>
+                                        <li>Опция 6</li>
+                                    </ul>
+                                </div>
+        
                             </div>
-                            <div class="switch-appraise__btn-reserve">
-                                <button class="btn-reserve">ЗАБРОНИРОВАТЬ</button>
-                            </div>
-
-                            <div class="cars-in-stock-result-car-list__location">
-                                <p><a href="#">Минск, ул. Каменногорская</a></p>
-                            </div>
+        
                         </div>
+        
                     </div>
-                </div>
-                <div class="car-full-information-image-block-image-car-features mobile">
-                    <div class="car-full-information-image-block-image-car-features__item">
-                        <img src="/images/pages/car-full-information/features__item/01.svg" alt="#">
-                        <p>Хэтчбек</p>
-                    </div>
-                    <div class="car-full-information-image-block-image-car-features__item">
-                        <img src="/images/pages/car-full-information/features__item/02.svg" alt="#">
-                        <p>4WD</p>
-                    </div>
-                    <div class="car-full-information-image-block-image-car-features__item">
-                        <img src="/images/pages/car-full-information/features__item/03.svg" alt="#">
-                        <p>5 мест</p>
-                    </div>
-                    <div class="car-full-information-image-block-image-car-features__item">
-                        <img src="/images/pages/car-full-information/features__item/04.svg" alt="#">
-                        <p>Бензин</p>
-                    </div>
-                    <div class="car-full-information-image-block-image-car-features__item">
-                        <img src="/images/pages/car-full-information/features__item/05.svg" alt="#">
-                        <p>Гарантия</p>
-                    </div>
-                </div>
-                <div class="features-cars-block">
-                    <div class="features-cars-block__wrapper">
-                        <div class="features-cars-block__list">
+                    <div class="dealer-location">
+                        <div class="dealer-location__info">
                             <ul>
-                                <li data-name="key-options"  class="active">Ключевые опции</li>
-                                <li data-name="fully-equipped" >Полная комплектация</li>
-                                <li data-name="features" >Характеристики</li>
-                                <li data-name="service-history" >Исторя обслуживания</li>
-                                <li data-name="certificate-of-inspection" >Сертификат осмотра</li>
+                                <li>Минск, пр-т Дзержинского, 134</li>
+                                <li><a href="tel:+3751234567">+375 123 45 67</a></li>
+                                <li>График работы</li>
+                                <li>пн-пт: <span>с 9-00 до 20-00</span><br>
+                                    сб: <span>с 9-00 до 19-00</span> <br>
+                                    вс: <span>выходной</span> </li>
                             </ul>
                         </div>
-                        <div class="features-cars-block-content">
-                            <div class="features-cars-block-content__item">
-                                <div class="features-cars-block-content__accord">
-                                    Ключевые опции
-                                </div>
-                                <ul data-name="key-options" class="features-cars-block-content__key-options">
-                                    <li>Опция 1</li>
-                                    <li>Опция 2</li>
-                                    <li>Опция 3</li>
-                                    <li>Опция 4</li>
-                                    <li>Опция 5</li>
-                                    <li>Опция 6</li>
-                                </ul>
-                            </div>
-                            <div class="features-cars-block-content__item">
-                                <div class="features-cars-block-content__accord">
-                                    Полная комплектация
-                                </div>
-                                <ul data-name="fully-equipped" class="features-cars-block-content__fully-equipped">
-                                    <li>Опция 2</li>
-                                    <li>Опция 2</li>
-                                    <li>Опция 3</li>
-                                    <li>Опция 4</li>
-                                    <li>Опция 5</li>
-                                    <li>Опция 6</li>
-                                </ul>
-                            </div>
-                            <div class="features-cars-block-content__item">
-                                <div class="features-cars-block-content__accord">
-                                    Характеристики
-                                </div>
-                                <ul data-name="features" class="features-cars-block-content__features">
-                                    <li>Опция 3</li>
-                                    <li>Опция 2</li>
-                                    <li>Опция 3</li>
-                                    <li>Опция 4</li>
-                                    <li>Опция 5</li>
-                                    <li>Опция 6</li>
-                                </ul>
-                            </div>
-                            <div class="features-cars-block-content__item">
-                                <div class="features-cars-block-content__accord">
-                                    Исторя обслуживания
-                                </div>
-                                <ul data-name="service-history" class="features-cars-block-content__service-history">
-                                    <li>Опция 4</li>
-                                    <li>Опция 2</li>
-                                    <li>Опция 3</li>
-                                    <li>Опция 4</li>
-                                    <li>Опция 5</li>
-                                    <li>Опция 6</li>
-                                </ul>
-                            </div>
-                            <div class="features-cars-block-content__item">
-                                <div class="features-cars-block-content__accord">
-                                    Сертификат осмотра
-                                </div>
-                                <ul data-name="certificate-of-inspection" class="features-cars-block-content__certificate-of-inspection">
-                                    <li>Опция 5</li>
-                                    <li>Опция 2</li>
-                                    <li>Опция 3</li>
-                                    <li>Опция 4</li>
-                                    <li>Опция 5</li>
-                                    <li>Опция 6</li>
-                                </ul>
-                            </div>
-
+                        <div class="dealer-location__map">
+        
                         </div>
-
+        
+        
                     </div>
-
+        
+                    <div class="similar-cars">
+                        <div class="similar-cars__title">
+                            <h6>Похожие автомобили</h6>
+                        </div>
+        
+                        <div class="certified-special-offer-list">
+                            <div class="certified-special-offer-list__item">
+                                <div class="certified-special-offer-list__img">
+                                    <img src="/images/pages/certified-autos/certified-special-offer/car.png" alt="#">
+                                </div>
+                                <div class="certified-special-offer-list__car-name">
+                                    <p>Renault Clio</p>
+                                </div>
+                                <div class="certified-special-offer-list__features">
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <p>
+                                                    <span class="generation">4-е поколение</span>
+                                                    <span class="circle"></span>
+                                                    <span class="year">2018</span><br>
+                                                    <span class="car-body">хэтчбек</span>
+                                                    <span class="circle"></span>
+                                                    <span class="car-drive">4WD</span>
+                                                    <span class="circle"></span>
+                                                    <span class="number-of-seats">5 мест</span>
+                                                </p>
+                                            </div>
+                                            <div><span class="mileage">32 500 </span>км</div>
+                                        </li>
+                                        <li>
+                                            <div class="engine-value">1,6 турбо</div>
+                                            <span class="engine-power">150 л.с</span>
+                                            <span class="circle"></span>
+                                            <span class="transmission">автомат</span>
+                                        </li>
+                                        <li>
+                                            <p><span class="price-car">28 000</span> BYN</p>
+                                        </li>
+                                        <li class="about-price">
+                                            <p>Подробнее о цене</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="certified-special-offer-list__additional-prices-block">
+                                    <div class="switch-credit">
+                                        <label class="switch">
+                                            <input id="credit" type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <label for="credit">
+                                            <div>Цена в кредит</div>
+                                            <div><span>31 501</span>BYN/мес</div>
+                                        </label>
+                                    </div>
+                                    <div class="switch-appraise">
+                                        <label class="switch">
+                                            <input id="appraise" type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <label for="appraise">
+                                            <div>Цена с учётом Trade-in</div>
+                                            <div>Оцените свой автомобиль</div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="certified-special-offer-list__location">
+                                    <p><a href="#">Минск, ул. Каменногорская</a></p>
+                                </div>
+                            </div>
+                            <div class="certified-special-offer-list__item">
+                                <div class="certified-special-offer-list__img">
+                                    <img src="/images/pages/certified-autos/certified-special-offer/car.png" alt="#">
+                                </div>
+                                <div class="certified-special-offer-list__car-name">
+                                    <p>Renault Clio</p>
+                                </div>
+                                <div class="certified-special-offer-list__features">
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <p>
+                                                    <span class="generation">4-е поколение</span>
+                                                    <span class="circle"></span>
+                                                    <span class="year">2018</span><br>
+                                                    <span class="car-body">хэтчбек</span>
+                                                    <span class="circle"></span>
+                                                    <span class="car-drive">4WD</span>
+                                                    <span class="circle"></span>
+                                                    <span class="number-of-seats">5 мест</span>
+                                                </p>
+                                            </div>
+                                            <div><span class="mileage">32 500 </span>км</div>
+                                        </li>
+                                        <li>
+                                            <div class="engine-value">1,6 турбо</div>
+                                            <span class="engine-power">150 л.с</span>
+                                            <span class="circle"></span>
+                                            <span class="transmission">автомат</span>
+                                        </li>
+                                        <li>
+                                            <p><span class="price-car">28 000</span> BYN</p>
+                                        </li>
+                                        <li class="about-price">
+                                            <p>Подробнее о цене</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="certified-special-offer-list__additional-prices-block">
+                                    <div class="switch-credit">
+                                        <label class="switch">
+                                            <input id="credit1" type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <label for="credit1">
+                                            <div>Цена в кредит</div>
+                                            <div><span>31 501</span>BYN/мес</div>
+                                        </label>
+                                    </div>
+                                    <div class="switch-appraise">
+                                        <label class="switch">
+                                            <input id="appraise1" type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <label for="appraise1">
+                                            <div>Цена с учётом Trade-in</div>
+                                            <div>Оцените свой автомобиль</div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="certified-special-offer-list__location">
+                                    <p><a href="#">Минск, ул. Каменногорская</a></p>
+                                </div>
+                            </div>
+                            <div class="certified-special-offer-list__item">
+                                <div class="certified-special-offer-list__img">
+                                    <img src="/images/pages/certified-autos/certified-special-offer/car.png" alt="#">
+                                </div>
+                                <div class="certified-special-offer-list__car-name">
+                                    <p>Renault Clio</p>
+                                </div>
+                                <div class="certified-special-offer-list__features">
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <p>
+                                                    <span class="generation">4-е поколение</span>
+                                                    <span class="circle"></span>
+                                                    <span class="year">2018</span><br>
+                                                    <span class="car-body">хэтчбек</span>
+                                                    <span class="circle"></span>
+                                                    <span class="car-drive">4WD</span>
+                                                    <span class="circle"></span>
+                                                    <span class="number-of-seats">5 мест</span>
+                                                </p>
+                                            </div>
+                                            <div><span class="mileage">32 500 </span>км</div>
+                                        </li>
+                                        <li>
+                                            <div class="engine-value">1,6 турбо</div>
+                                            <span class="engine-power">150 л.с</span>
+                                            <span class="circle"></span>
+                                            <span class="transmission">автомат</span>
+                                        </li>
+                                        <li>
+                                            <p><span class="price-car">28 000</span> BYN</p>
+                                        </li>
+                                        <li class="about-price">
+                                            <p>Подробнее о цене</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="certified-special-offer-list__additional-prices-block">
+                                    <div class="switch-credit">
+                                        <label class="switch">
+                                            <input id="credit2" type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <label for="credit2">
+                                            <div>Цена в кредит</div>
+                                            <div><span>31 501</span>BYN/мес</div>
+                                        </label>
+                                    </div>
+                                    <div class="switch-appraise">
+                                        <label class="switch">
+                                            <input id="appraise2" type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <label for="appraise2">
+                                            <div>Цена с учётом Trade-in</div>
+                                            <div>Оцените свой автомобиль</div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="certified-special-offer-list__location">
+                                    <p><a href="#">Минск, ул. Каменногорская</a></p>
+                                </div>
+                            </div>
+                            <div class="certified-special-offer-list__item">
+                                <div class="certified-special-offer-list__img">
+                                    <img src="/images/pages/certified-autos/certified-special-offer/car.png" alt="#">
+                                </div>
+                                <div class="certified-special-offer-list__car-name">
+                                    <p>Renault Clio</p>
+                                </div>
+                                <div class="certified-special-offer-list__features">
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <p>
+                                                    <span class="generation">4-е поколение</span>
+                                                    <span class="circle"></span>
+                                                    <span class="year">2018</span><br>
+                                                    <span class="car-body">хэтчбек</span>
+                                                    <span class="circle"></span>
+                                                    <span class="car-drive">4WD</span>
+                                                    <span class="circle"></span>
+                                                    <span class="number-of-seats">5 мест</span>
+                                                </p>
+                                            </div>
+                                            <div><span class="mileage">32 500 </span>км</div>
+                                        </li>
+                                        <li>
+                                            <div class="engine-value">1,6 турбо</div>
+                                            <span class="engine-power">150 л.с</span>
+                                            <span class="circle"></span>
+                                            <span class="transmission">автомат</span>
+                                        </li>
+                                        <li>
+                                            <p><span class="price-car">28 000</span> BYN</p>
+                                        </li>
+                                        <li class="about-price">
+                                            <p>Подробнее о цене</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="certified-special-offer-list__additional-prices-block">
+                                    <div class="switch-credit">
+                                        <label class="switch">
+                                            <input id="credit3" type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <label for="credit3">
+                                            <div>Цена в кредит</div>
+                                            <div><span>31 501</span>BYN/мес</div>
+                                        </label>
+                                    </div>
+                                    <div class="switch-appraise">
+                                        <label class="switch">
+                                            <input id="appraise3" type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <label for="appraise3">
+                                            <div>Цена с учётом Trade-in</div>
+                                            <div>Оцените свой автомобиль</div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="certified-special-offer-list__location">
+                                    <p><a href="#">Минск, ул. Каменногорская</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
                 </div>
-
             </div>
-        </div>
-    </main>
-    <footer class="footer">
-        <div class="footer__wrapper">
-            <div class="footer-desktop">
-                <div class="footer-desktop__title">
-                    <a href="#">
-                        <h4>Объявления о продаже б/у автомобилей</h4>
-                    </a>
-                </div>
-                <div class="footer-desktop__nav">
-                    <nav>
+        </main>
+        <footer class="footer">
+            <div class="footer__wrapper">
+                <div class="footer-desktop">
+                    <div class="footer-desktop__title">
+                        <a href="#">
+                            <h4>Объявления о продаже б/у автомобилей</h4>
+                        </a>
+                    </div>
+                    <div class="footer-desktop__nav">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Авто в наличии</a></li>
+                                <li><a href="#">Сертифицированные авто</a></li>
+                                <li><a href="#">Кредитование</a></li>
+                                <li><a href="#">Дилеры</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer-desktop__info">
                         <ul>
-                            <li><a href="#">Авто в наличии</a></li>
-                            <li><a href="#">Сертифицированные авто</a></li>
-                            <li><a href="#">Кредитование</a></li>
-                            <li><a href="#">Дилеры</a></li>
+                            <li>ООО «Продажабу»<br /> УНП 1234567890</li>
+                            <li>Минск, ул. Улица 15,</li>
+                            <li>
+                                <a href="#">Служба поддержки</a>
+                            </li>
                         </ul>
-                    </nav>
+                    </div>
                 </div>
-                <div class="footer-desktop__info">
-                    <ul>
-                        <li>ООО «Продажабу»<br /> УНП 1234567890</li>
-                        <li>Минск, ул. Улица 15,</li>
-                        <li>
-                            <a href="#">Служба поддержки</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-mobile">
-
-                <div class="footer-mobile__nav">
-                    <nav>
+                <div class="footer-mobile">
+        
+                    <div class="footer-mobile__nav">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Авто в наличии</a></li>
+                                <li><a href="#">Сертифицированные авто</a></li>
+                                <li><a href="#">Кредитование</a></li>
+                                <li><a href="#">Дилеры</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer-mobile__info">
                         <ul>
-                            <li><a href="#">Авто в наличии</a></li>
-                            <li><a href="#">Сертифицированные авто</a></li>
-                            <li><a href="#">Кредитование</a></li>
-                            <li><a href="#">Дилеры</a></li>
+                            <li>ООО «Продажабу»<br /> УНП 1234567890</li>
+                            <li>Минск, ул. Улица 15,</li>
+                            <li>
+                                <a href="#">Служба поддержки</a>
+                            </li>
                         </ul>
-                    </nav>
-                </div>
-                <div class="footer-mobile__info">
-                    <ul>
-                        <li>ООО «Продажабу»<br /> УНП 1234567890</li>
-                        <li>Минск, ул. Улица 15,</li>
-                        <li>
-                            <a href="#">Служба поддержки</a>
-                        </li>
-                    </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
+  
     <script src="/scripts/slider/swiper-bundle.min.js"></script>
     <script src="/scripts/car-full-information.js/car-full-information.js"></script>
 
